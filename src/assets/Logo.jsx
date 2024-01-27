@@ -1,8 +1,8 @@
-import React from 'react'
+
 
 const Logo = () => {
   return (
-    <div>Logo</div>
+    <div className='font-saint text-[40px]'>SefeAkin</div>
   )
 }
 
