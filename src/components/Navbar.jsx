@@ -43,7 +43,7 @@ function Navbar() {
     
       <nav className="md:hidden flex justify-center fixed z-10 w-[90vw] h-[15vh] ">
         <div className="nav-container pt-5 flex justify-between w-[90%]">
-            <div className="">
+            <div className="mt-4">
              <Logo />
             </div>
 
@@ -53,10 +53,10 @@ function Navbar() {
             
             >
               {isMobileMenuOpen ? (
-                <img src={close} alt="Close"  className="w-[50px] h-[45px] p-2 cursor-pointer"/>
+                <img src={close} alt="Close"  className="w-[45px] h-[40px] p-2 cursor-pointer"/>
               ) : (
                 <div className=" flex justify-center items-center h-[100%] pb-9">
-                  <img src={menu} alt="Menu"  className="w-[60px] h-[60px] p-2 cursor-pointer "/>
+                  <img src={menu} alt="Menu"  className="w-[50px] h-[50px] p-2 cursor-pointer "/>
                 </div>
               )}
             </div>
