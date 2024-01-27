@@ -29,27 +29,28 @@ function App() {
   }, []);
 
   return (
-    <div className="md:p-10  p-5 ">
-      <div
+    <div className="main h-svh md:p-10  p-5 ">
+      <div className="">
+        <div
           className="absolute"
           style={{
             width: '90%',
-            height: '100vh',
+            zIndex: '0',
             background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, transparent 20%, ${
               isDarkMode ? '#fff' : '#000'
             } 20%)`,
           }}
-        ></div>
-    <div className="main h-[90vh]">
-      <Navbar />
-      <div className="pt-[15%]">
-        <Hero />
-        <Projects />
-        <GetToKnow />
-        <GetInTouch />
+          >
+            <Navbar />
+            <div className="pt-[15%]">
+              <Hero />
+              <Projects />
+              <GetToKnow />
+              <GetInTouch />
+            </div>
+            <Footer />
+        </div>
       </div>
-      <Footer />
-    </div>
     </div>
   )
 }
