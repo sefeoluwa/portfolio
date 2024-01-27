@@ -28,7 +28,7 @@ function Navbar() {
           <Logo />
           </div>
 
-          <ul className="flex justify-around w-[9cm] pt-2 text-[15px]">
+          <ul className="flex justify-around w-[9cm] pt-2 text-[15px] items-center h-12">
             <li>About</li>
             <li>Work</li>
             <li>Contact</li>
