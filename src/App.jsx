@@ -42,7 +42,7 @@ function App() {
         ></div>
     <div className="main h-[90vh]">
       <Navbar />
-      <div className="pt-[20%]">
+      <div className="pt-[15%]">
         <Hero />
         <Projects />
         <GetToKnow />
