@@ -47,7 +47,7 @@ function Navbar() {
              <Logo />
             </div>
 
-            <div className="w-[100px] h-[50px] p-4 mt-2 flex justify-between items-center ">
+            <div className="w-[120px] h-[50px] p-4 mt-2 flex justify-between items-center ">
         <FaGithub style={{ fontSize: '25px' }}/>
         <FaLinkedin style={{ fontSize: '25px' }}/>
         </div>
@@ -58,10 +58,12 @@ function Navbar() {
             
             >
               {isMobileMenuOpen ? (
-                <img src={close} alt="Close"  className="w-[45px] h-[40px] p-2 cursor-pointer"/>
+               <div className="flex justify-center items-center h-[100%] pb-[10px]">
+                 <img src={close} alt="Close"  className="w-[45px] h-[40px] p-2 cursor-pointer mb-[22px]"/>
+               </div>
               ) : (
-                <div className=" flex justify-center items-center h-[100%] pb-9">
-                  <img src={menu} alt="Menu"  className="w-[50px] h-[50px] p-2 cursor-pointer "/>
+                <div className=" flex justify-center items-center h-[100%] pb-3">
+                  <img src={menu} alt="Menu"  className="w-[50px] h-[50px] p-2.5 cursor-pointer mb-[22px]"/>
                 </div>
               )}
             </div>
@@ -88,12 +90,12 @@ function Navbar() {
         animate="open"
         exit="closed"
         variants={sideVariants}
-        className="md:hidden flex flex-col  text-white absolute bottom-16 pb-10 w-full">
+        className="md:hidden flex flex-col absolute bottom-16 pb-10 w-full">
           <ul className="text-[20px] items-center flex flex-col w-full justify-center p-5">
-            <motion.li variants={itemVariants} className="bg-[#0D0D0D] w-full flex justify-center p-2 h-12 items-center">About</motion.li>
-            <motion.li variants={itemVariants} className="mt-3 p-2 bg-[#0D0D0D] w-full flex justify-center h-12 items-center">Projects</motion.li>
-            <motion.li variants={itemVariants} className="mt-3 p-2 bg-[#0D0D0D] w-full flex justify-center h-12 items-center">Contact</motion.li>
-            <motion.li variants={itemVariants} className="mt-3 bg-[#0D0D0D] w-full flex justify-center h-12 items-center">More</motion.li>
+            <motion.li variants={itemVariants} className="nav-links w-full flex justify-center p-2 h-12 items-center rounded-[10px]">About</motion.li>
+            <motion.li variants={itemVariants} className="mt-3 p-2 nav-links w-full flex justify-center h-12 items-center rounded-[10px]">Projects</motion.li>
+            <motion.li variants={itemVariants} className="mt-3 p-2 nav-links w-full flex justify-center h-12 items-center rounded-[10px]">Contact</motion.li>
+            <motion.li variants={itemVariants} className="mt-3 nav-links light:bg-white w-full flex justify-center h-12 items-center rounded-[10px]">More</motion.li>
           </ul>
         </motion.div>
         </motion.aside>
