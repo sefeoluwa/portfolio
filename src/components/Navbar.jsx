@@ -1,17 +1,13 @@
 import { useState } from "react";
 import { Logo, menu, close } from "../assets";
-import { AnimatePresence, motion, useAnimation } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { sideVariants, itemVariants } from '../utils/motion.js'
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const controls = useAnimation();
-
-  const handleHover = () => {
-    controls.start({ x: [0, -5, 5, -5, 0], transition: { duration: 0.7 } });
-  };
-
+ 
   const handleMobileMenuToggle = () => {
     setIsMobileMenuOpen((prevState) => !prevState);
   };
@@ -23,7 +19,7 @@ function Navbar() {
     <>
        {/* Desktop Navbar */}
        <nav className="nav-full sticky top-0 flex md:flex justify-between pt-5 z-10 h-5">
-        <div className="nav-container flex justify-between w-[75%] mx-auto">
+        <div className="nav-container flex justify-between w-[65%] mx-auto">
           <div className="">
           <Logo />
           </div>
@@ -34,15 +30,10 @@ function Navbar() {
             <li>Contact</li>
             <li>More</li>
           </ul>
-
-          <motion.button
-            onHoverStart={handleHover}
-            onHoverEnd={() => controls.start({ x: 0 })}
-            animate={controls}
-            className="w-[211px] h-[50px] bg-[#FF7143] text-white rounded-xl text-[17px]"
-          >
-            Get Started
-          </motion.button>
+        <div className="w-[100px] h-[50px] p-4 flex justify-between items-center ">
+        <FaGithub style={{ fontSize: '25px' }}/>
+        <FaLinkedin style={{ fontSize: '25px' }}/>
+        </div>
         </div>
       </nav>
 
