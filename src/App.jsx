@@ -2,7 +2,8 @@ import { Navbar, Footer, GetInTouch, GetToKnow, Hero, Projects } from "./compone
 function App() {
 
   return (
-    <div>
+    <div className="p-10">
+    <div className="main">
       <Navbar />
       <div className="">
         <Hero />
@@ -11,7 +12,7 @@ function App() {
         <GetInTouch />
       </div>
       <Footer />
-
+    </div>
     </div>
   )
 }
