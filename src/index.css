@@ -11,7 +11,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #0D0D0D;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -20,18 +20,33 @@
 }
 
 
+
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #ffff;
   }
-  a:hover {
-    color: #747bff;
   }
-  button {
-    background-color: #f9f9f9;
-  }
+.main{
+  background: #f2f2f2; 
+  border-radius: 15px;
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+@media (prefers-color-scheme: dark) {
+
+  .main{
+   background: rgba(68, 55, 55, 0.32);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(12.2px);
+   -webkit-backdrop-filter: blur(12.2px);
+   border: 1px solid rgba(68, 55, 55, 0.21);
+   }
+}
+
 
 @media screen and (max-width: 800px) {
   .nav-full{
