@@ -21,6 +21,11 @@
 
 .resume{
   background: linear-gradient(180deg, #1A1A1A 0%, #131313 100%);
+  transition: all, .5s, ease-in;
+}
+
+.resume:hover{
+  background: linear-gradient(180deg, #213547 0%, #131313 100%);
 }
 
 
@@ -41,6 +46,11 @@
 
 .nav-links{
   background: #fff;
+}
+
+.touch-btn{
+  background: #fff;
+  color:#213547;
 }
 
 }
