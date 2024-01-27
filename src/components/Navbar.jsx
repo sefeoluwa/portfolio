@@ -41,11 +41,16 @@ function Navbar() {
       {/* Mobile Navbar */}
       
     
-      <nav className="md:hidden flex justify-center fixed z-10 w-[90vw] h-[15vh] ">
+      <nav className="md:hidden flex justify-center z-10 w-[90vw] h-[15vh] absolute bottom-[0]">
         <div className="nav-container pt-5 flex justify-between w-[90%]">
             <div className="mt-4">
              <Logo />
             </div>
+
+            <div className="w-[100px] h-[50px] p-4 mt-2 flex justify-between items-center ">
+        <FaGithub style={{ fontSize: '25px' }}/>
+        <FaLinkedin style={{ fontSize: '25px' }}/>
+        </div>
 
             {/* Mobile menu button (hamburger) */}
             <div
