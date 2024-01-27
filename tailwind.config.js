@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'lovers': ['Lovers Quarrel', 'cursive'],
+      'saint': ['Mrs Saint Delafield', 'cursive'],
+    }
   },
   plugins: [],
 }
