@@ -2,7 +2,7 @@ import { Navbar, Footer, GetInTouch, GetToKnow, Hero, Projects } from "./compone
 function App() {
 
   return (
-    <div className="p-10">
+    <div className="md:p-10  p-5">
     <div className="main">
       <Navbar />
       <div className="pt-[20%]">
