@@ -5,7 +5,7 @@ function App() {
     <div className="p-10">
     <div className="main">
       <Navbar />
-      <div className="">
+      <div className="pt-[20%]">
         <Hero />
         <Projects />
         <GetToKnow />
