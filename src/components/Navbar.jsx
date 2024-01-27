@@ -26,7 +26,7 @@ function Navbar() {
 
           <ul className="flex justify-around w-[9cm] pt-2 text-[15px] items-center h-12">
             <li>About</li>
-            <li>Work</li>
+            <li>Projects</li>
             <li>Contact</li>
             <li>More</li>
           </ul>
@@ -88,19 +88,13 @@ function Navbar() {
         animate="open"
         exit="closed"
         variants={sideVariants}
-        className="container md:hidden flex flex-col fixed bg-[#5454D4] text-white w-[55vw] ml-[35vw] mt-[10vh] h-[350px] items-end pr-[18vw] z-10 rounded-2xl pt-4">
-          <ul className="text-[20px] mr-[-25px] p-5">
-            <motion.li variants={itemVariants} className="mb-6">Home</motion.li>
-            <motion.li variants={itemVariants} className="mb-6">Features</motion.li>
-            <motion.li variants={itemVariants} className="mb-6">Pricing</motion.li>
-            <motion.li variants={itemVariants} className="mb-6">Blog</motion.li>
+        className="md:hidden flex flex-col  text-white absolute bottom-16 pb-10 w-full">
+          <ul className="text-[20px] items-center flex flex-col w-full justify-center p-5">
+            <motion.li variants={itemVariants} className="bg-[#0D0D0D] w-full flex justify-center p-2 h-12 items-center">About</motion.li>
+            <motion.li variants={itemVariants} className="mt-3 p-2 bg-[#0D0D0D] w-full flex justify-center h-12 items-center">Projects</motion.li>
+            <motion.li variants={itemVariants} className="mt-3 p-2 bg-[#0D0D0D] w-full flex justify-center h-12 items-center">Contact</motion.li>
+            <motion.li variants={itemVariants} className="mt-3 bg-[#0D0D0D] w-full flex justify-center h-12 items-center">More</motion.li>
           </ul>
-          <motion.button
-            variants={itemVariants}
-            className="w-[150px] h-[48px] bg-[#FF7143] text-white rounded-xl text-[14px] mt-4 mr-[-2.8em]"
-          >
-            Get Started
-          </motion.button>
         </motion.div>
         </motion.aside>
       )}
