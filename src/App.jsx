@@ -29,11 +29,11 @@ function App() {
   }, []);
 
   return (
-    <div className="md:p-10  p-5">
+    <div className="md:p-10  p-5 ">
       <div
           className="absolute"
           style={{
-            width: '100%',
+            width: '90%',
             height: '100vh',
             background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, transparent 20%, ${
               isDarkMode ? '#fff' : '#000'
