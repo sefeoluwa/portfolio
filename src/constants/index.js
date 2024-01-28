@@ -8,6 +8,7 @@ import {
     sketch,
     Bookshelf,
     Tech,
+    sefe,
 } from '../assets'
 
 const projects = [
@@ -81,6 +82,7 @@ const know = [
     {
         name: 'About me',
         description: 'Who I am and what I do.',
+        image: sefe,
     },
     {
         name: 'Tech Stack',

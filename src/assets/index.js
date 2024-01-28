@@ -11,6 +11,7 @@ import library from "./library.png";
 import clone from './clone.png'
 import Tech from './Tech.png'
 import Bookshelf from './Bookshelf.png'
+import sefe from './sefe.jpeg'
 
 export {
     Logo,
@@ -26,4 +27,5 @@ export {
     clone,
     Tech,
     Bookshelf,
+    sefe,
 }
