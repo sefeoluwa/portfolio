@@ -6,6 +6,8 @@ import {
     profolio,
     clone, 
     sketch,
+    Bookshelf,
+    Tech,
 } from '../assets'
 
 const projects = [
@@ -74,6 +76,25 @@ const projects = [
  },
 ];
 
+
+const know = [
+    {
+        name: 'About me',
+        description: 'Who I am and what I do.',
+    },
+    {
+        name: 'Tech Stack',
+        description: 'The dev tools, apps,and devices I use.',
+        image: Tech,
+    },
+    {
+        name: 'Bookshelf',
+        description: "Books and piecesof wisdom I've enjoyed reading",
+        image: Tech,
+    }
+]
+
 export { 
     projects,
+    know,
 }
