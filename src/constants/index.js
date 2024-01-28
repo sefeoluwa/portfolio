@@ -90,11 +90,47 @@ const know = [
     {
         name: 'Bookshelf',
         description: "Books and piecesof wisdom I've enjoyed reading",
-        image: Tech,
-    }
+        image: Bookshelf,
+    },
+];
+
+const footlinks = [
+ {
+  name: 'Links',
+  links: [
+    {
+      name: 'About',
+    },
+    {
+      name: 'Projects',
+    },
+    {
+      name: 'Tech Stack',
+    },
+    {
+      name: 'Contact',
+    },
+  ]
+ },
+ {
+  name: 'Elsewhere',
+  links: [
+    {
+      name: 'Email',
+    },
+    {
+      name: 'LinkedIn',
+    },
+    {
+      name: 'GitHub',
+    },
+  ]
+ }
+
 ]
 
 export { 
     projects,
     know,
+    footlinks,
 }
