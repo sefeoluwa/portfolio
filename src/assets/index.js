@@ -9,6 +9,8 @@ import profolio from './profolio.png'
 import sketch from "./sketch.png";
 import library from "./library.png";
 import clone from './clone.png'
+import Tech from './Tech.png'
+import Bookshelf from './Bookshelf.png'
 
 export {
     Logo,
@@ -22,4 +24,6 @@ export {
     sketch,
     library,
     clone,
+    Tech,
+    Bookshelf,
 }
