@@ -8,6 +8,7 @@ import figmaland from './figmaland.png'
 import profolio from './profolio.png'
 import sketch from "./sketch.png";
 import library from "./library.png";
+import clone from './clone.png'
 
 export {
     Logo,
@@ -20,4 +21,5 @@ export {
     profolio,
     sketch,
     library,
+    clone,
 }
