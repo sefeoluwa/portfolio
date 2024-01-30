@@ -29,12 +29,20 @@
   background: linear-gradient(180deg, #213547 0%, #131313 100%);
 }
 
+.project-card {
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
 
 
 
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
+    background: #f2f2f2;
+  }
+  .project-card > div{
     background: #f2f2f2;
   }
   
