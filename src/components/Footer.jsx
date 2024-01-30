@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className='flex justify-around items-start flex-col xxl:h-[350px] max-w-[1514px] p-5  '>
       <div className="h-[1px] bg-[#808080] w-full xxl:ml-5"></div>
-      <div className="flex justify-around items-start my-12 w-full flex-wrap-reverse">
+      <div className="flex justify-around items-start my-12 w-full xs:flex-wrap-reverse md:flex-wrap">
         <div className="flex flex-col justify-between items-start gap-[93px] ">
           <div className="">
             <Logo />
