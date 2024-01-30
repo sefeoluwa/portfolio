@@ -6,7 +6,7 @@ const GetInTouch = () => {
   return (
     <div className="h-[60vh] flex flex-wrap justify-around p-14 mt-14">
       <div className="">
-        <h2 className="flex w-full font-bold text-center lg:text-[48px] sm:text-[35px] xs:text-[30px] text-[16px] lg:leading-[40px]">Let's work together</h2>
+        <h2 className="flex w-full font-bold text-center lg:text-[48px] sm:text-[35px] xs:text-[30px] text-[32px] lg:leading-[40px]">Let's work together</h2>
         <p className="flex justify-start  mt-8 text-[20px] max-w-[496px] leading-[30px] text-[#808080]">Want to discuss an opportunity to create something great? I’m ready when you are!</p>
       </div>
       
