@@ -3,8 +3,8 @@ import { footlinks } from '../constants'
 
 const Footer = () => {
   return (
-    <div className='flex flex-wrap justify-around items-start flex-col xl:w-[98%] w-[264px] p-5 mb-8 '>
-      <div className="h-[1px] bg-[#808080] w-full xxl:ml-5"></div>
+    <div className='flex flex-wrap justify-around items-start flex-col md:w-[98%] w-[264px] p-5 mb-8 '>
+      <div className="h-[1px] bg-[#808080] md:w-full w-[80vw] xxl:ml-5"></div>
       <div className="flex xs:justify-start md:justify-around items-start my-12 w-full xs:flex-wrap-reverse md:flex-wrap">
         <div className="flex flex-col justify-between items-start gap-[93px] ">
           <div className="">
