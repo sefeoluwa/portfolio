@@ -10,8 +10,8 @@ const Projects = () => {
       <div className="mt-20 pl-0 p-5 lg:pl-[13%] flex flex-wrap gap-12 items-center justify-center lg:justify-start">
         {projects.map((project) => (
           <div className="project-card  py-[3px] rounded-[15px]" key={project.name}>
-            <div className="relative rounded-2xl sm:w-[360px] w-full h-fit p-4 bg-tertiary " >
-            <img src={project.image} alt="" className="w-full rounded-2xl" />
+            <div className="relative rounded-2xl sm:w-[360px] w-full h-[550px] p-4 bg-tertiary " >
+            <img src={project.image} alt="" className="w-full rounded-2xl object-cover" />
             <div className="flex gap-8 items-end m-3 card-img_hover z-[2]">
               <button
                 onClick={() => window.open(project.live_preview_link, "_blank")}
@@ -26,7 +26,7 @@ const Projects = () => {
             </div>
             <p className="font-bold text-[24px]">{project.name}</p>
             <p className="mt-2 text-[15px]">{project.description}</p>
-            <div className="font-bold mt-4 flex flex-wrap gap-2">
+            <div className="font-bold absolute bottom-6 flex flex-wrap gap-2 ">
             {project.tags.map((tag) => (
           <p key={tag.name} className={`text-[14px] ${tag.color}`}>
           #{tag.name}
