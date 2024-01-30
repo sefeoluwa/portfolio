@@ -181,7 +181,7 @@ const know = [
     },
     {
         name: 'Bookshelf',
-        description: "Books and piecesof wisdom I've enjoyed reading",
+        description: "Books and pieces of wisdom I've enjoyed reading",
         image: Bookshelf,
     },
 ];
