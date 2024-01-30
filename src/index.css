@@ -19,21 +19,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.resume{
-  background: linear-gradient(180deg, #1A1A1A 0%, #131313 100%);
-  transition: all, .5s, ease-in;
-}
-
-.resume:hover{
-  background: linear-gradient(180deg, #213547 0%, #131313 100%);
-}
 
 .project-card {
   background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-
-
 
 .main-button {
   touch-action: manipulation;
@@ -113,6 +103,11 @@
  
 }
 
+.touch-btn{
+  background: #fff;
+  font-weight: 500;
+}
+
 .nav-links{
   background: #fff;
 }
@@ -170,8 +165,8 @@
   -webkit-text-fill-color: transparent;
 }
 
-.know-cards{
-  background: #f2f2f2;
+.know-cards {
+  box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(0, 100, 0) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
 }
 
 
@@ -190,9 +185,9 @@
    .nav-links{
     background: #000;
   }
-  .resume{
-    box-shadow: 0px 2px 4px 0px rgba(255, 255, 255, 0.08) inset, 0px 1px 2px 0px rgba(255, 255, 255, 0.02) inset;
-
+  
+  .know-cards {
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(0, 0, 0.7) 10px -10px 0px -3px, rgb(0, 100, 0) 10px -10px, rgb(0, 0, 0.7) 20px -20px 0px -3px, rgb(200, 150, 0) 20px -20px, rgb(0, 0, 0.7) 30px -30px 0px -3px, rgb(150, 75, 0) 30px -30px, rgb(0, 0, 0.7) 40px -40px 0px -3px, rgb(100, 0, 0) 40px -40px;
   }
 
 
