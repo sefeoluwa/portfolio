@@ -9,8 +9,8 @@ const Projects = () => {
 
       <div className="mt-20 pl-0 p-5 lg:pl-[13%] flex flex-wrap gap-12 items-center justify-center lg:justify-start">
         {projects.map((project) => (
-          <div className="project-card  py-[3px] rounded-[15px]" key={project.name}>
-            <div className="relative rounded-2xl sm:w-[360px] w-full h-[550px] p-4 bg-tertiary " >
+          <div className="project-card  py-[3px]  rounded-[15px]" key={project.name}>
+            <div className="relative rounded-2xl w-[330px] lg:w-[350px] lg:h-[550px] h-[500px] p-4 bg-tertiary " >
             <img src={project.image} alt="" className="w-full rounded-2xl object-cover" />
             <div className="flex gap-8 items-end m-3 card-img_hover z-[2]">
               <button
