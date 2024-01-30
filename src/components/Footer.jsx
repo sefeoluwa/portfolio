@@ -3,8 +3,10 @@ import { footlinks } from '../constants'
 
 const Footer = () => {
   return (
-    <div className='flex justify-around'>
-      <div className="">
+    <div className='flex justify-around items-center flex-col xxl:h-[326px] max-w-[1514px] '>
+      <div className="h-[1px] bg-[#808080] max-w-[1514px] m-5"></div>
+     <div className="flex justify-between items-start w-full">
+     <div className="flex flex-col justify-between items-start">
         <div className="">
           <Logo />
           <p>Thanks for stopping by ッ</p>
@@ -24,6 +26,7 @@ const Footer = () => {
           </div>
         ))}
       </div>
+     </div>
     </div>
   )
 }
