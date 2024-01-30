@@ -41,7 +41,7 @@ function Navbar() {
       {/* Mobile Navbar */}
       
     
-      <nav className="md:hidden flex justify-center z-10 w-[90vw] h-[15vh] absolute bottom-[0]">
+      <nav className="md:hidden flex justify-center z-10 w-[90vw] h-[15vh] fixed bottom-[0] ">
         <div className="nav-container pt-5 flex justify-between w-[90%]">
             <div className="mt-4">
              <Logo />
@@ -58,12 +58,12 @@ function Navbar() {
             
             >
               {isMobileMenuOpen ? (
-               <div className="flex justify-center items-center h-[100%] pb-[10px]">
-                 <img src={close} alt="Close"  className="w-[45px] h-[40px] p-2 cursor-pointer mb-[22px]"/>
+               <div className="flex justify-center items-center h-[100%] pb-[10px] object-contain">
+                 <img src={close} alt="Close"  className="w-[45px] h-[50px] p-2 cursor-pointer mb-[22px] z-20"/>
                </div>
               ) : (
                 <div className=" flex justify-center items-center h-[100%] pb-3">
-                  <img src={menu} alt="Menu"  className="w-[50px] h-[50px] p-2.5 cursor-pointer mb-[22px]"/>
+                  <img src={menu} alt="Menu"  className="w-[50px] h-[50px] p-2.5 cursor-pointer mb-[22px] z-20"/>
                 </div>
               )}
             </div>
@@ -90,7 +90,7 @@ function Navbar() {
         animate="open"
         exit="closed"
         variants={sideVariants}
-        className="md:hidden flex flex-col absolute bottom-16 pb-10 w-full">
+        className="md:hidden flex flex-col fixed ml-[-40px] bottom-16 pb-10 w-full z-10">
           <ul className="text-[20px] items-center flex flex-col w-full justify-center p-5">
             <motion.li variants={itemVariants} className="nav-links w-full flex justify-center p-2 h-12 items-center rounded-[10px]">About</motion.li>
             <motion.li variants={itemVariants} className="mt-3 p-2 nav-links w-full flex justify-center h-12 items-center rounded-[10px]">Projects</motion.li>
