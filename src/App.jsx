@@ -3,8 +3,8 @@ function App() {
 
 
   return (
-    <div className="xl:p-5 p-2 ">
-        <div className="main p-3 bg-tertiary rounded-3xl">
+    <div className="xl:p-5 p-1 ">
+        <div className="main bg-tertiary rounded-3xl">
             <Navbar />
             <div className="pt-[15%]">
               <Hero />
