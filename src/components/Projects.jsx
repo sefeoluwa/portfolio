@@ -26,7 +26,13 @@ const Projects = () => {
             </div>
             <p className="font-bold text-[24px]">{project.name}</p>
             <p className="mt-2 text-[15px]">{project.description}</p>
-            <p>{project.tags}</p>
+            <div className="font-bold mt-4 flex flex-wrap gap-2">
+            {project.tags.map((tag) => (
+          <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+          #{tag.name}
+          </p>
+        ))}
+       </div>
           </div>
           </div>
         ))}
