@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [active, setActive] = useState("");
+  const [active, setActive] = useState(false);
 
  
   const handleMobileMenuToggle = () => {
@@ -24,21 +24,49 @@ function Navbar() {
        <nav className="nav-full sticky top-0 left-[4.5vw] rounded-b-2xl lg:w-[90vw] flex justify-center pt-5 z-10">
         <div className="nav-container flex justify-between w-[65%] mx-auto">
           <Link 
-          to='#hero
-          ' 
+          to='#hero' 
           className="cursor-pointer"
           onClick={() => {
-            setActive("");
+            setActive(true);
             document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
           }}>
           <Logo />
           </Link>
 
           <ul className="flex justify-around w-[9cm] pt-2 text-[15px] items-center h-12">
-            <li className="nav-full-li cursor-pointer text-[#808080] hover:text-[#f2f2f2] active:text-[#fff]">About</li>
-            <li className="nav-full-li cursor-pointer text-[#808080] hover:text-[#f2f2f2] active:text-[#fff]">Projects</li>
-            <li className="nav-full-li cursor-pointer text-[#808080] hover:text-[#f2f2f2] active:text-[#fff]">Contact</li>
-            <li className="nav-full-li cursor-pointer text-[#808080] hover:text-[#f2f2f2] active:text-[#fff]">More</li>
+            <li>
+          <Link 
+          to="#about" 
+          className="cursor-pointer text-[#808080] hover:text-[#f2f2f2] active:text-[#fff]"
+          onClick={() => {
+            setActive(true);
+            document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+          }}>
+              About
+            </Link>
+          </li>
+          <li className="nav-full-li">
+            <Link 
+            to="#projects" 
+            className="cursor-pointer text-[#808080] hover:text-[#f2f2f2] active:text-[#fff]"
+            onClick={() => {
+              setActive(true);
+              document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+            }}>
+              Projects
+            </Link>
+          </li>
+          <li>
+          <Link 
+          to="#contact" 
+          className="cursor-pointer text-[#808080] hover:text-[#f2f2f2] active:text-[#fff]"
+          onClick={() => {
+            setActive(true);
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+          }}>
+              Contact
+            </Link>
+          </li>
           </ul>
         <div className="w-[100px] h-[50px] p-4 flex justify-between items-center ">
         <FaGithub style={{ fontSize: '25px' }}/>
@@ -51,13 +79,21 @@ function Navbar() {
       {/* Mobile Navbar */}
       
     
-      <nav className="mobile-nav md:hidden flex justify-center z-10 h-[12vh] fixed bottom-0 w-full mb-2 ">
-        <div className="nav-container pt-5 flex justify-between w-[90%]">
-            <div className="mt-4">
-             <Logo />
+      <nav className="mobile-nav md:hidden flex justify-center z-10 h-[12vh] fixed bottom-0 w-[88vw] pt-4 left-6 rounded-t-2xl items-center">
+        <div className="nav-container flex justify-between w-[90%]">
+            <div className="">
+            <Link 
+          to='#hero' 
+          className="cursor-pointer"
+          onClick={() => {
+            setActive(true);
+            document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
+          }}>
+          <Logo />
+          </Link>
             </div>
 
-            <div className="w-[120px] h-[50px] p-4 mt-2 flex justify-between items-center ">
+            <div className="w-[120px] h-[50px] p-5 flex mb-2 justify-between items-end ">
         <FaGithub style={{ fontSize: '25px' }}/>
         <FaLinkedin style={{ fontSize: '25px' }}/>
         </div>
@@ -65,7 +101,7 @@ function Navbar() {
             {/* Mobile menu button (hamburger) */}
             <div
               onClick={handleMobileMenuToggle}
-              className="flex justify-center items-center h-[80%]"
+              className="flex justify-center items-center h-[100%]"
             >
               {isMobileMenuOpen ? (
                 <RiCloseLine style={{ fontSize: '40px', cursor: 'pointer' }}/>
@@ -98,10 +134,38 @@ function Navbar() {
         variants={sideVariants}
         className="md:hidden flex flex-col fixed bottom-16 pb-10 w-full z-10">
           <ul className="text-[20px] items-center flex flex-col w-full justify-center p-5">
-            <motion.li variants={itemVariants} className="nav-links w-full flex justify-center p-2 h-12 items-center rounded-[10px]">About</motion.li>
-            <motion.li variants={itemVariants} className="mt-3 p-2 nav-links w-full flex justify-center h-12 items-center rounded-[10px]">Projects</motion.li>
-            <motion.li variants={itemVariants} className="mt-3 p-2 nav-links w-full flex justify-center h-12 items-center rounded-[10px]">Contact</motion.li>
-            <motion.li variants={itemVariants} className="mt-3 nav-links light:bg-white w-full flex justify-center h-12 items-center rounded-[10px]">More</motion.li>
+            <motion.li variants={itemVariants} className="nav-links w-full flex justify-center p-2 h-12 items-center rounded-[10px]">
+            <Link to="#about" 
+          className=""
+          onClick={() => {
+            setActive(true);
+            document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+          }}>
+              About
+            </Link>
+            </motion.li>
+            <motion.li variants={itemVariants} className="mt-3 p-2 nav-links w-full flex justify-center h-12 items-center rounded-[10px]">
+            <Link 
+            to="#projects" 
+            className=""
+            onClick={() => {
+              setActive(true);
+              document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+            }}>
+              Projects
+            </Link>
+            </motion.li>
+            <motion.li variants={itemVariants} className="mt-3 p-2 nav-links w-full flex justify-center h-12 items-center rounded-[10px]">
+            <Link 
+          to="#contact" 
+          className=""
+          onClick={() => {
+            setActive(true);
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+          }}>
+              Contact
+            </Link>
+            </motion.li>
           </ul>
         </motion.div>
         </motion.aside>
