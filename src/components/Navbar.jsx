@@ -26,10 +26,10 @@ function Navbar() {
           </div>
 
           <ul className="flex justify-around w-[9cm] pt-2 text-[15px] items-center h-12">
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
-            <li>More</li>
+            <li className="nav-full-li cursor-pointer text-[#808080] hover:text-[#f2f2f2] active:text-[#fff]">About</li>
+            <li className="nav-full-li cursor-pointer text-[#808080] hover:text-[#f2f2f2] active:text-[#fff]">Projects</li>
+            <li className="nav-full-li cursor-pointer text-[#808080] hover:text-[#f2f2f2] active:text-[#fff]">Contact</li>
+            <li className="nav-full-li cursor-pointer text-[#808080] hover:text-[#f2f2f2] active:text-[#fff]">More</li>
           </ul>
         <div className="w-[100px] h-[50px] p-4 flex justify-between items-center ">
         <FaGithub style={{ fontSize: '25px' }}/>
