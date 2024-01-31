@@ -1,12 +1,14 @@
 import { useState } from "react";
-import { Logo, menu, close } from "../assets";
+import { Logo } from "../assets";
 import { AnimatePresence, motion } from "framer-motion";
 import { sideVariants, itemVariants } from '../utils/motion.js'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { RiMenuFoldFill, RiCloseLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [active, setActive] = useState("");
 
  
   const handleMobileMenuToggle = () => {
@@ -21,9 +23,16 @@ function Navbar() {
        {/* Desktop Navbar */}
        <nav className="nav-full sticky top-0 left-[4.5vw] rounded-b-2xl lg:w-[90vw] flex justify-center pt-5 z-10">
         <div className="nav-container flex justify-between w-[65%] mx-auto">
-          <div className="">
+          <Link 
+          to='#hero
+          ' 
+          className="cursor-pointer"
+          onClick={() => {
+            setActive("");
+            document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
+          }}>
           <Logo />
-          </div>
+          </Link>
 
           <ul className="flex justify-around w-[9cm] pt-2 text-[15px] items-center h-12">
             <li className="nav-full-li cursor-pointer text-[#808080] hover:text-[#f2f2f2] active:text-[#fff]">About</li>
