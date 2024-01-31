@@ -24,31 +24,19 @@ function Navbar() {
        {/* Desktop Navbar */}
        <nav className="nav-full sticky top-0 left-[4.5vw] rounded-b-2xl lg:w-[90vw] flex justify-center pt-5 z-10">
         <div className="nav-container flex justify-between w-[65%] mx-auto">
-          <Link 
-          to='#hero' 
-          className="cursor-pointer"
-          onClick={() => {
-            setActive(true);
-            document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
-          }}>
+          <Link to='/' className="cursor-pointer">
           <Logo />
           </Link>
 
           <ul className="flex justify-around w-[9cm] pt-2 text-[15px] items-center h-12">
             <li>
-          <Link 
-          to="#about" 
-          className="cursor-pointer"
-          onClick={() => {
-            setActive(true);
-            document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
-          }}>
+          <Link to="/about" className="cursor-pointer">
               About
             </Link>
           </li>
           <li className="nav-full-li">
             <Link 
-            to="#projects" 
+            to="/#projects" 
             className="cursor-pointer"
             onClick={() => {
               setActive(true);
@@ -58,13 +46,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-          <Link 
-          to="#contact" 
-          className="cursor-pointer"
-          onClick={() => {
-            setActive(true);
-            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-          }}>
+          <Link to="/contact" className="cursor-pointer">
               Contact
             </Link>
           </li>
@@ -87,13 +69,7 @@ function Navbar() {
       <nav className="mobile-nav md:hidden flex justify-center z-10 h-[12vh] fixed bottom-0 w-[88vw] pt-4 left-6 rounded-t-2xl items-center">
         <div className="nav-container flex justify-between w-[90%]">
             <div className="">
-            <Link 
-          to='#hero' 
-          className="cursor-pointer"
-          onClick={() => {
-            setActive(true);
-            document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
-          }}>
+            <Link to='/' className="cursor-pointer">
           <Logo />
           </Link>
             </div>
@@ -144,18 +120,13 @@ function Navbar() {
         className="md:hidden flex flex-col fixed bottom-16 pb-10 w-full z-10">
           <ul className="text-[20px] items-center flex flex-col w-[95vw] justify-center p-5">
             <motion.li variants={itemVariants} className="nav-links w-full flex justify-center p-2 h-12 items-center rounded-[10px]">
-            <Link to="#about" 
-          className=""
-          onClick={() => {
-            setActive(true);
-            document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
-          }}>
+            <Link to="/about">
               About
             </Link>
             </motion.li>
             <motion.li variants={itemVariants} className="mt-3 p-2 nav-links w-full flex justify-center h-12 items-center rounded-[10px]">
             <Link 
-            to="#projects" 
+            to="/#projects" 
             className=""
             onClick={() => {
               setActive(true);
@@ -165,13 +136,7 @@ function Navbar() {
             </Link>
             </motion.li>
             <motion.li variants={itemVariants} className="mt-3 p-2 nav-links w-full flex justify-center h-12 items-center rounded-[10px]">
-            <Link 
-          to="#contact" 
-          className=""
-          onClick={() => {
-            setActive(true);
-            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-          }}>
+            <Link to="/contact">
               Contact
             </Link>
             </motion.li>
