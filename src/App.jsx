@@ -1,8 +1,11 @@
 import { Navbar, Footer, GetInTouch, GetToKnow, Hero, Projects } from "./components"
+import { BrowserRouter } from "react-router-dom"
 function App() {
 
 
   return (
+    <BrowserRouter>
+    
     <div className="xl:p-5 p-1 ">
         <div className="main bg-tertiary rounded-3xl">
             <Navbar />
@@ -15,6 +18,8 @@ function App() {
             <Footer />
         </div>
       </div>
+      
+      </BrowserRouter>
   )
 }
 
