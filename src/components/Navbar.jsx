@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useState } from "react";
 import { Logo } from "../assets";
 import { AnimatePresence, motion } from "framer-motion";
@@ -68,10 +69,14 @@ function Navbar() {
             </Link>
           </li>
           </ul>
-        <div className="w-[100px] h-[50px] p-4 flex justify-between items-center ">
-        <FaGithub style={{ fontSize: '25px' }}/>
-        <FaLinkedin style={{ fontSize: '25px' }}/>
-        </div>
+          <div className="w-[100px] h-[50px] p-4 flex justify-between items-center ">
+               <a href="https://github.com/sefeoluwa" target="_blank" rel="noreferrer">
+               <FaGithub style={{ fontSize: '25px' }}/>
+               </a>
+               <a href="https://www.linkedin.com/in/sefeakinbeye/" target="_blank" rel="noreferrer">
+               <FaLinkedin style={{ fontSize: '25px' }}/>
+               </a>
+          </div>
         </div>
       </nav>
 
@@ -94,8 +99,12 @@ function Navbar() {
             </div>
 
             <div className="w-[120px] h-[50px] p-5 flex mb-2 justify-between items-end ">
-        <FaGithub style={{ fontSize: '25px' }}/>
-        <FaLinkedin style={{ fontSize: '25px' }}/>
+            <a href="https://github.com/sefeoluwa" target="_blank" rel="noreferrer">
+               <FaGithub style={{ fontSize: '25px' }}/>
+               </a>
+               <a href="https://www.linkedin.com/in/sefeakinbeye/" target="_blank" rel="noreferrer">
+               <FaLinkedin style={{ fontSize: '25px' }}/>
+               </a>
         </div>
 
             {/* Mobile menu button (hamburger) */}
