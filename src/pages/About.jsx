@@ -39,7 +39,7 @@ const About = () => {
         </div>
       </div>
 
-      <p className='max-w-[700px] px-10 lg:px-0 text-[18px]'>Feel free to reach out via e-mail or follow me on Twitter. Dive into my professional journey through my Resume, or connect with me on LinkedIn.</p>
+      <p className='max-w-[700px] px-10 lg:px-0 text-[18px]'>Feel free to reach out <a href="mailto:sefeoluwaakinbeye@gmail.com" className='font-bold underline underline-offset-4'>email</a> via  Dive into my professional journey through my <a  href="https://flowcv.com/resume/ok647of1rh" target="blank" rel="noreferrer" className='font-bold underline underline-offset-4'>Resume</a>, or connect with me on <a href="https://www.linkedin.com/in/sefeakinbeye/" target="_blank" rel="noreferrer" className='font-bold underline underline-offset-4'>LinkedIn.</a></p>
 
       <p className='max-w-[700px] px-10 lg:px-0 text-[18px]'>Let's collaborate and build something great together,</p>
 
