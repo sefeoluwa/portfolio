@@ -9,6 +9,22 @@ import {
     Bookshelf,
     Tech,
     sefe,
+    atomic_habits,
+    novice,
+    Book,
+    css,
+    greatestSalesman,
+    harry,
+    headfirstJS,
+    Improbable,
+    jsVisually,
+    secrets,
+    smarter,
+    steal,
+    vulture,
+    data,
+    modern,
+    eloquent,
 } from '../assets'
 
 const projects = [
@@ -224,8 +240,28 @@ const footlinks = [
 
 ]
 
+const shelf = [
+    atomic_habits,
+    novice,
+    Book,
+    css,
+    greatestSalesman,
+    harry,
+    headfirstJS,
+    Improbable,
+    jsVisually,
+    secrets,
+    smarter,
+    steal,
+    vulture,
+    data,
+    modern,
+    eloquent,
+]
+
 export { 
     projects,
     know,
     footlinks,
+    shelf,
 }
