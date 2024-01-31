@@ -3,6 +3,7 @@ import { Logo, menu, close } from "../assets";
 import { AnimatePresence, motion } from "framer-motion";
 import { sideVariants, itemVariants } from '../utils/motion.js'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { RiMenuFoldFill, RiCloseLine } from "react-icons/ri";
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -41,7 +42,7 @@ function Navbar() {
       {/* Mobile Navbar */}
       
     
-      <nav className="md:hidden flex justify-center z-10 w-[90vw] h-[15vh] fixed bottom-[0] ">
+      <nav className="mobile-nav md:hidden flex justify-center z-10 h-[12vh] fixed bottom-0 w-full ">
         <div className="nav-container pt-5 flex justify-between w-[90%]">
             <div className="mt-4">
              <Logo />
@@ -58,12 +59,13 @@ function Navbar() {
             
             >
               {isMobileMenuOpen ? (
-               <div className="flex justify-center items-center h-[100%] pb-[10px] object-contain">
-                 <img src={close} alt="Close"  className="w-[45px] h-[50px] p-2 cursor-pointer mb-[22px] z-20"/>
+               <div className="flex justify-center items-center h-[100%] ">
+                <RiCloseLine style={{ fontSize: '40px' }}/>
+                 
                </div>
               ) : (
-                <div className=" flex justify-center items-center h-[100%] pb-3">
-                  <img src={menu} alt="Menu"  className="w-[50px] h-[50px] p-2.5 cursor-pointer mb-[22px] z-20"/>
+                <div className=" flex justify-center items-center h-[100%]">
+                  <RiMenuFoldFill style={{ fontSize: '38px' }}/>
                 </div>
               )}
             </div>
