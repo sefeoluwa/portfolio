@@ -56,17 +56,12 @@ function Navbar() {
             {/* Mobile menu button (hamburger) */}
             <div
               onClick={handleMobileMenuToggle}
-            
+              className="flex justify-center items-center h-[80%]"
             >
               {isMobileMenuOpen ? (
-               <div className="flex justify-center items-center h-[100%] ">
-                <RiCloseLine style={{ fontSize: '40px' }}/>
-                 
-               </div>
+                <RiCloseLine style={{ fontSize: '40px', cursor: 'pointer' }}/>
               ) : (
-                <div className=" flex justify-center items-center h-[100%]">
-                  <RiMenuFoldFill style={{ fontSize: '38px' }}/>
-                </div>
+                  <RiMenuFoldFill style={{ fontSize: '38px', cursor: 'pointer' }}/>
               )}
             </div>
           </div>
