@@ -6,8 +6,8 @@ function App() {
   return (
     <BrowserRouter>
     
-    <div className="xl:p-5 p-1 ">
-        <div className="main bg-tertiary rounded-3xl">
+    <div className=" flex items-center justify-center ">
+        <div className="main w-[95vw] bg-tertiary rounded-3xl">
             <Navbar />
             <div className="pt-[15%]">
               <Hero />
