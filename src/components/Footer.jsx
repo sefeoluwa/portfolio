@@ -18,7 +18,7 @@ const Footer = () => {
         {footlinks.map((link) => (
           <div className="flex flex-col lg:gap-[16px] justify-start items-start" key={link.name}>
             <p className='text-[16px] font-bold '>{link.name}</p>
-            <ul>
+            <ul className='flex flex-col gap-5 mt-5'>
               {link.links.map((links) => (
                 <li className='cursor-pointer flex flex-col gap-[8px] text-[#808080]' key={links.name}>{links.name}</li>
               ))}
