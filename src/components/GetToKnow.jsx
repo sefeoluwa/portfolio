@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { know } from '../constants'
 
 const GetToKnow = () => {
@@ -7,13 +8,13 @@ const GetToKnow = () => {
 
       <div className="flex flex-wrap items-start justify-around gap-[55px] max-w-full p-10 mt-[5%]">
         {know.map((about) => (
-          <div className="know-cards cursor-zoom-in flex flex-col items-center justify-center gap-5 rounded-[32px] h-[350px] md:h-[450px] w-[400px] overflow-hidden p-3" key={about.name}>
+          <Link to={`/${about.id}`} className="know-cards cursor-pointer flex flex-col items-center justify-center gap-5 rounded-[32px] h-[350px] md:h-[450px] w-[400px] overflow-hidden p-3" key={about.name}>
             <p className='text-[32px] font-bold'>{about.name}</p>
             <p className='text-[16px] text-[#808080]'>{about.description}</p>
             <div className="object-contain  rounded-xl overflow-hidden h-full items-end flex ">
             <img className='' src={about.image} alt="" />
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
