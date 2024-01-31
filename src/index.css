@@ -19,6 +19,29 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.nav-links {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.nav-links::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-top: 2px solid transparent;
+  border-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  border-image-slice: 1;
+  border-radius: inherit;
+}
+
+
 
 .project-card {
   background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
@@ -183,7 +206,11 @@
   }
 
    .nav-links{
-    background: #000;
+    background: rgba(21, 16, 48, 0.58);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.2px);
+    -webkit-backdrop-filter: blur(12.2px);
   }
   
   .know-cards {

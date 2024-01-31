@@ -90,7 +90,7 @@ function Navbar() {
         animate="open"
         exit="closed"
         variants={sideVariants}
-        className="md:hidden flex flex-col fixed ml-[-40px] bottom-16 pb-10 w-full z-10">
+        className="md:hidden flex flex-col fixed bottom-16 pb-10 w-full z-10">
           <ul className="text-[20px] items-center flex flex-col w-full justify-center p-5">
             <motion.li variants={itemVariants} className="nav-links w-full flex justify-center p-2 h-12 items-center rounded-[10px]">About</motion.li>
             <motion.li variants={itemVariants} className="mt-3 p-2 nav-links w-full flex justify-center h-12 items-center rounded-[10px]">Projects</motion.li>
