@@ -42,7 +42,7 @@ function Navbar() {
       {/* Mobile Navbar */}
       
     
-      <nav className="mobile-nav md:hidden flex justify-center z-10 h-[12vh] fixed bottom-0 w-full ">
+      <nav className="mobile-nav md:hidden flex justify-center z-10 h-[12vh] fixed bottom-0 w-full mb-2 ">
         <div className="nav-container pt-5 flex justify-between w-[90%]">
             <div className="mt-4">
              <Logo />
