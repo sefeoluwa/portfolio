@@ -20,17 +20,17 @@ const About = () => {
 
         <div className="flex flex-col gap-5">
           <h2 className='font-bold'>WHAT I DO</h2>
-          <p>As a Front End Developer, I specialize in crafting high-quality web interfaces using cutting-edge technologies. I believe in the power of code to transform ideas into visually stunning and functional websites. My work is centered around user-centric design, ensuring that every project delivers an outstanding digital experience.</p>
+          <p>As a Front End Developer, I specialize in crafting high-quality web interfaces using cutting-edge technologies. I believe in the power of code to transform ideas into visually stunning and functional websites. My work is centered around user-centric design, ensuring that every project delivers an outstanding web experience.</p>
         </div>
 
         <div className="flex flex-col gap-5">
           <h2 className='font-bold'>WHAT I DID</h2>
-          <p>During my time as a Growth Marketing Associate at PersonaRise, I delved into content management, honed my skills in Search Engine Optimization (SEO), built backlinks for our blog, curated engaging email marketing campaigns, and crafted compelling social media content for Twitter.</p>
+          <p>During my time as a Growth Marketing Associate at PersonaRise, I delved into content management. I honed my skills in Search Engine Optimization (SEO), built backlinks for our blog, curated engaging email marketing campaigns, and crafted compelling social media content for Twitter.</p>
         </div>
 
         <div className="flex flex-col gap-5">
           <h2 className='font-bold'>EDUCATION</h2>
-          <p>I embarked on a comprehensive FullStack JavaScript journey with The Odin Project. This immersive course equipped me with the proficiency in Front-end technologies, and I continue to explore Back-end development, mastering key technologies such as HTML, CSS, JavaScript, Node.js, and React.js.</p>
+          <p>I embarked on a comprehensive FullStack JavaScript journey with The Odin Project. This immersive course equipped me with the proficiency in Front-end technologies, and I continue to explore Back-end development, mastering key technologies such as HTML5, CSS3, JavaScript, Node.js, React.js, NextJS, GraphQL, and Firebase.</p>
         </div>
 
         <div className="flex flex-col gap-5">
