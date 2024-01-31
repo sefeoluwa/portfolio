@@ -4,7 +4,7 @@
 const Hero = () => {
 
   return (
-    <div className="h-[80vh] pt-24 lg:pt-10 flex justify-center items-start">
+    <section id="hero" className="h-[80vh] pt-24 lg:pt-10 flex justify-center items-start">
       <div className="flex items-center flex-col  justify-center gap-[40px]  max-w-[1008px]  h-[345px]">
         <h1 className="font-black lg:text-[80px] sm:text-[60px] xs:text-[48px] text-[40px] lg:leading-[98px] mt-2 z-10 ">
           <span className="text-[#808080]">I'm</span> Sefe Akinbeye
@@ -15,7 +15,7 @@ const Hero = () => {
           <button className="touch-btn flex h-[55px] py-[16px] px-[40px] bg-[#181818] rounded-[1.87rem] text-[18px]">Get in touch</button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
