@@ -1,25 +1,30 @@
-import { Navbar, Footer, GetInTouch, GetToKnow, Hero, Projects } from "./components"
-import { BrowserRouter } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { Footer, Navbar } from "./components"
+import { About, Bookshelf, Contact, Home, Stack } from "./pages"
+
+
+
 function App() {
 
 
   return (
-    <BrowserRouter>
+    <Router>
     
     <div className=" py-4 flex items-center justify-center ">
         <div className="main w-[95vw] bg-tertiary rounded-3xl">
             <Navbar />
-            <div className="pt-[15%]">
-              <Hero />
-              <Projects />
-              <GetToKnow />
-              <GetInTouch />
-            </div>
+              <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/stack" element={<Stack />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/bookshelf" element={<Bookshelf />} />
+              </Routes>
             <Footer />
         </div>
       </div>
       
-      </BrowserRouter>
+      </Router>
   )
 }
 
