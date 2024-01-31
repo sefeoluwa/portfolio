@@ -37,7 +37,7 @@ function Navbar() {
             <li>
           <Link 
           to="#about" 
-          className="cursor-pointer text-[#808080] hover:text-[#f2f2f2] active:text-[#fff]"
+          className="cursor-pointer"
           onClick={() => {
             setActive(true);
             document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
@@ -48,7 +48,7 @@ function Navbar() {
           <li className="nav-full-li">
             <Link 
             to="#projects" 
-            className="cursor-pointer text-[#808080] hover:text-[#f2f2f2] active:text-[#fff]"
+            className="cursor-pointer"
             onClick={() => {
               setActive(true);
               document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
@@ -59,7 +59,7 @@ function Navbar() {
           <li>
           <Link 
           to="#contact" 
-          className="cursor-pointer text-[#808080] hover:text-[#f2f2f2] active:text-[#fff]"
+          className="cursor-pointer"
           onClick={() => {
             setActive(true);
             document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
@@ -133,7 +133,7 @@ function Navbar() {
         exit="closed"
         variants={sideVariants}
         className="md:hidden flex flex-col fixed bottom-16 pb-10 w-full z-10">
-          <ul className="text-[20px] items-center flex flex-col w-full justify-center p-5">
+          <ul className="text-[20px] items-center flex flex-col w-[95vw] justify-center p-5">
             <motion.li variants={itemVariants} className="nav-links w-full flex justify-center p-2 h-12 items-center rounded-[10px]">
             <Link to="#about" 
           className=""
