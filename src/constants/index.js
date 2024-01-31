@@ -173,16 +173,19 @@ const know = [
         name: 'About me',
         description: 'Who I am and what I do.',
         image: sefe,
+        id: 'about',
     },
     {
         name: 'Tech Stack',
         description: 'The dev tools, apps,and devices I use.',
         image: Tech,
+        id: 'stack',
     },
     {
         name: 'Bookshelf',
         description: "Books and pieces of wisdom I've enjoyed reading",
         image: Bookshelf,
+        id: 'bookshelf',
     },
 ];
 
