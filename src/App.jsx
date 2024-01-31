@@ -6,7 +6,7 @@ function App() {
   return (
     <BrowserRouter>
     
-    <div className=" flex items-center justify-center ">
+    <div className=" py-4 flex items-center justify-center ">
         <div className="main w-[95vw] bg-tertiary rounded-3xl">
             <Navbar />
             <div className="pt-[15%]">
