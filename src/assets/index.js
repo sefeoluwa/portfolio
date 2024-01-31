@@ -1,6 +1,4 @@
 import Logo from "./Logo.jsx";
-import menu from './menu.svg'
-import close from './close.svg'
 import globe from "./globe.png"
 import menu_app from "./menu_app.png"
 import blogged from "./blogged.png"
@@ -15,8 +13,6 @@ import sefe from './sefe.jpeg'
 
 export {
     Logo,
-    menu, 
-    close,
     globe,
     menu_app,
     blogged,
