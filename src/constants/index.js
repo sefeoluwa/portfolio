@@ -211,15 +211,19 @@ const footlinks = [
   links: [
     {
       name: 'About',
+      id: '/about',
     },
     {
       name: 'Projects',
+      id: '/#projects',
     },
     {
       name: 'Tech Stack',
+      id: '/stack',
     },
     {
       name: 'Contact',
+      id: '/contact',
     },
   ]
  },
@@ -228,12 +232,15 @@ const footlinks = [
   links: [
     {
       name: 'Email',
+      id: 'mailto:sefeoluwaakinbeye@gmail.com',
     },
     {
       name: 'LinkedIn',
+      id: 'https://www.linkedin.com/in/sefeakinbeye/',
     },
     {
       name: 'GitHub',
+      id: 'https://github.com/sefeoluwa',
     },
   ]
  }
