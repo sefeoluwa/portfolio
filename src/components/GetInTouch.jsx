@@ -12,6 +12,8 @@ const GetInTouch = () => {
       </div>
       
       <Link to="/contact" className="main-button py-[16px] px-[32px] flex items-center justify-center h-[55px] rounded-[9px]  gap-[8px] font-semibold text-white"><FaRocket /> <button >Get in touch</button></Link>
+
+      <button className="main-button py-[16px] px-[32px] flex items-center justify-center h-[55px] rounded-[9px]  gap-[8px] font-semibold text-white"><FaRocket /> <Link to="/contact">Get in touch</Link></button>
       <button className="main-button py-[16px] px-[32px] flex items-center justify-center h-[55px] rounded-[9px]  gap-[8px] font-semibold text-white"><FaRocket /> <Link to="/contact">Get in touch</Link></button>
       </section>
   )
