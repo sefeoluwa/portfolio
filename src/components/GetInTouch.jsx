@@ -10,7 +10,7 @@ const GetInTouch = () => {
         <p className="flex justify-start  mt-8 text-[20px] max-w-[496px] leading-[30px] text-[#808080]">Want to discuss an opportunity to create something great? I’m ready when you are!</p>
       </div>
       
-      <button className="main-button py-[16px] px-[32px] flex items-center justify-center h-[55px] rounded-[9px]  gap-[8px] font-semibold text-white"><FaRocket /> Get in touch</button>
+      <button className="main-button py-[16px] px-[32px] flex items-center justify-center h-[55px] rounded-[9px]  gap-[8px] font-semibold text-white"><FaRocket /> <a href="/contact">Get in touch</a></button>
       </section>
   )
 }
