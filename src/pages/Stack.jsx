@@ -5,7 +5,7 @@ const Stack = () => {
     <div>
       <div className="">
         <h2>Tech Stack</h2>
-        <p>he dev tools and apps I use.</p>
+        <p>The dev tools and apps I use.</p>
       </div>
 
      <div className="">
