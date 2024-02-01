@@ -1,5 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import { Link } from "react-router-dom";
+
 
 const Hero = () => {
 
@@ -14,9 +16,9 @@ const Hero = () => {
           <a href="https://flowcv.com/resume/ok647of1rh" target="blank" rel="noreferrer">
           <button className="main-button  flex items-center justify-center font-semibold text-white">See my resume</button>
           </a>
-          <a href="/contact" className="touch-btn flex items-center h-[60px] md:h-auto px-[40px] bg-[#181818] rounded-[1.87rem] text-[18px]">
+          <Link to="/contact" className="touch-btn flex items-center h-[60px] md:h-auto px-[40px] bg-[#181818] rounded-[1.87rem] text-[18px]">
           <button className=" flex items-center font-semibold">Get in touch</button>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
