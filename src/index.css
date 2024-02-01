@@ -235,6 +235,10 @@ input, textarea{
   color: #213547;
 }
 
+.tech{
+  background: #fff;
+}
+
 }
 
 
@@ -242,6 +246,15 @@ input, textarea{
 @media (prefers-color-scheme: dark) {
   :root{
     background: #000;
+  }
+
+  .tech{
+    border: 0.5px solid #808080;
+    transition: all .05s ease;
+  }
+
+  .tech:hover{
+    border: 2px solid #808080;
   }
 
   .main{
