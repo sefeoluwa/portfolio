@@ -89,14 +89,14 @@ const Contact = () => {
 
           <form ref={formRef} onSubmit={handleSubmit} className='mt-6 flex flex-col gap-10  justify-center'>
           <label htmlFor="name" className="flex flex-wrap gap-5 ">
-            <span className=''>Your Name:</span>
+            <span className='flex items-center'>Your Name:</span>
             <input type="text" name='name' id='name' value={form.name} onChange={handleChange} placeholder="What's your name?" required 
-            className='outline-none border-b-[0.5px] border-[#808080]'  
+            className='outline-none p-2 border-b-[0.5px] border-[#808080]'  
             aria-label='name'/>
           </label>
 
           <label htmlFor="email" className="flex flex-wrap items-center gap-5">
-                <span className=''>Your Email:</span>
+                <span className='flex items-center'>Your Email:</span>
                 <input
                   type="text"
                   name='email'
@@ -105,7 +105,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Your email"
                   required
-                  className={`placeholder:text-[#808080] outline-none  border-b-[0.5px] border-[#808080] p-2 font-medium ${!isValidEmail ? 'border-red-500' : ''}`}
+                  className={`outline-none  border-b-[0.5px] border-[#808080] p-2 font-medium ${!isValidEmail ? 'border-red-500' : ''}`}
                 />
                 {!isValidEmail && (
                   <span className="text-red-500">Invalid email format</span>
@@ -114,7 +114,7 @@ const Contact = () => {
 
           <label htmlFor="" className="flex flex-col">
             <span className=' font-medium mb-4'>Your Message:</span>
-            <textarea rows='7' name='message' value={form.message} onChange={handleChange} placeholder="Write your message here" required className='placeholder:text-[#808080] bg-tranparent outline-none p-4  border-[0.5px] border-[#808080]' />
+            <textarea rows='7' name='message' value={form.message} onChange={handleChange} placeholder="Write your message here" required className='placeholder:text-[#808080] bg-tranparent outline-none p-4  border-[0.5px] border-[#808080] rounded-2xl ' />
           </label>
 
             <button type='submit' className=''>{loading ? 'Sending...' : sendButton}</button>
