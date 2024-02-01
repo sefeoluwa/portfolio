@@ -28,6 +28,7 @@ import {
 } from '../assets'
 
 import {
+  CSS,
   figma,
   Github,
   html,
@@ -296,7 +297,7 @@ const shelf = [
 ]
 
 const tech = {
-  tech: [
+  dev: [
     {
       logo: reactjs,
       name: 'ReactJS',
@@ -323,7 +324,7 @@ const tech = {
       description: '',
     },
     {
-      logo: css,
+      logo: CSS,
       name: 'CSS3',
       description: 'CSS',
     },

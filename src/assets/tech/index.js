@@ -1,4 +1,4 @@
-import css from "./css.png";
+import CSS from "./CSS.png";
 import figma from "./figma.png";
 import Github from "./Github.png";
 import html from "./html.png";
@@ -29,7 +29,7 @@ import netlify from './netlify.png'
 export{
     netlify,
     spotify,
-    css,
+    CSS,
     figma,
     Github,
     html,
