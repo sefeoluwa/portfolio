@@ -13,7 +13,7 @@ import discord from './discord.png'
 import duolingo from './duolingo.png'
 import firebase from './firebase.png'
 import framer from './framer.png'
-import grapql from './graphql.png'
+import graphql from './graphql.png'
 import next from './next.png'
 import notion from './notion.png'
 import slack from './slack.png'
@@ -41,7 +41,7 @@ export{
     duolingo,
     firebase,
     framer,
-    grapql,
+    graphql,
     next,
     slack,
     notion,
