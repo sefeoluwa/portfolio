@@ -29,7 +29,7 @@ const Stack = () => {
             <div className="">
           {tech.app.map((app) => (
             <div className="" key={app.name}>
-              <img src={app.logo} alt="" />
+              <img src={app.logo} alt="" className=""/>
               <div className="">
                 <p>{app.name}</p>
                 <p>{app.description}</p>
