@@ -118,7 +118,7 @@ const Contact = () => {
           </label>
 
             <div className="w-full flex  justify-center items-center">
-            <button type='submit' className='main-button w-[80%] md:w-[30%]'>{loading ? 'Sending...' : sendButton}</button>
+            <button type='submit' className='main-button w-[80%] md:w-[40%] lg:w-[30%]'>{loading ? 'Sending...' : sendButton}</button>
             </div>
           </form>
        </div>
