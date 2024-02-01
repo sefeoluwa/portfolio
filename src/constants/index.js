@@ -42,7 +42,7 @@ import {
   duolingo,
   firebase,
   framer,
-  grapql,
+  graphql,
   next,
   slack,
   notion,
@@ -51,6 +51,8 @@ import {
   vercel,
   vscode,
   clickup,
+  netlify,
+  spotify
 
 } from '../assets/tech'
 
@@ -296,104 +298,138 @@ const shelf = [
 const tech = {
   tech: [
     {
-      logo: 'reactjs',
+      logo: reactjs,
       name: 'ReactJS',
+      description: 'Web Framwork',
     },
     {
-      logo: 'javascript',
+      logo: javascript,
       name: 'JavaScript',
+      description: 'Web Framework',
     },
     {
-      logo: 'next',
+      logo: next,
       name: 'NextJS',
+      description: 'Web Framework',
     },
     {
-      logo: 'nodejs',
+      logo: nodejs,
       name: 'NodeJS',
+      description: 'Web Framework',
     },
     {
-      logo: 'html',
+      logo: html,
       name: 'HTML5',
+      description: '',
     },
     {
-      logo: 'css',
+      logo: css,
       name: 'CSS3',
+      description: 'CSS',
     },
     {
-      logo: 'tailwind',
+      logo: tailwind,
       name: 'TailwindCSS',
+      description: 'CSS',
     },
     {
-      logo: 'ts',
+      logo: ts,
       name: 'TypeScript',
+      description: 'Web Framework',
     },
     {
-      logo: 'redux',
+      logo: redux,
       name: 'Redux',
+      description: 'State Management',
     },
     {
-      logo: 'threejs',
+      logo: threejs,
       name: 'ThreeJS',
+      description: '3D Render',
     },
     {
-      logo: 'figma',
+      logo: figma,
       name: 'Figma',
+      description: 'Design',
     },
     {
-      logo: 'graphql',
+      logo: graphql,
       name: 'GraphQL',
+      description: 'Database',
     },
     {
-      logo: 'firebase',
+      logo: firebase,
       name: 'Firebase',
+      description: 'Database',
     },
     {
-      logo: 'vercel',
+      logo: vercel,
       name: 'Vercel',
+      description: 'Deployment',
     },
     {
-      logo: 'framer',
-      name: 'Framer',
+      logo: netlify,
+      name: 'Netlify',
+      description: 'Deployment',
     },
     {
-      logo: 'vscode',
+      logo: framer,
+      name: 'Framer Motion',
+      description: 'Animation',
+    },
+    {
+      logo: vscode,
       name: 'VSCode',
+      description: 'Editor',
     },
   ],
 
   app: [
     {
-      logo: 'slack',
+      logo: slack,
       name: 'Slack',
+      description: 'Communication',
     },
     {
-      logo: 'trello',
+      logo: trello,
       name: 'Trello',
+      description: 'Productivity',
     },
     {
-      logo: 'clickup',
+      logo: clickup,
       name: 'Clickup',
+      description: 'Productivity',
     },
     {
-      logo: 'notion',
+      logo: notion,
       name: 'notion',
+      description: 'Notes',
     },
     {
-      logo: 'Github',
+      logo: Github,
       name: 'Github',
+      description: 'Version Control',
     },
     {
-      logo: 'chatgpt',
+      logo: chatgpt,
       name: 'chatgpt',
+      description: 'Productivity',
     },
     {
-      logo: 'discord',
+      logo: discord,
       name: 'discord',
+      description: 'Communication',
     },
     {
-      logo: 'duolingo',
-      name: 'duolingo',
+      logo: duolingo,
+      name: 'Duolingo',
+      description: 'Education',
     },
+    {
+      logo: spotify,
+      name: 'Spotify',
+      description: 'Music',
+    }
   ]
 }
 

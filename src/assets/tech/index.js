@@ -22,10 +22,13 @@ import vercel from './vercel.png'
 import vscode from './vscode.png'
 import clickup from './clickup.png'
 import trello from './trello.png'
-
+import spotify from './spotify.png'
+import netlify from './netlify.png'
 
 
 export{
+    netlify,
+    spotify,
     css,
     figma,
     Github,
