@@ -46,6 +46,11 @@ function Navbar() {
             </Link>
           </li>
           <li>
+          <Link to="/stack" className="cursor-pointer">
+              Stack
+            </Link>
+          </li>
+          <li>
           <Link to="/contact" className="cursor-pointer">
               Contact
             </Link>
@@ -133,6 +138,11 @@ function Navbar() {
               document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
             }}>
               Projects
+            </Link>
+            </motion.li>
+            <motion.li variants={itemVariants} className="mt-3 p-2 nav-links w-full flex justify-center h-12 items-center rounded-[10px]">
+            <Link to="/stack">
+              Tech Stack
             </Link>
             </motion.li>
             <motion.li variants={itemVariants} className="mt-3 p-2 nav-links w-full flex justify-center h-12 items-center rounded-[10px]">
