@@ -37,7 +37,6 @@ import {
   reactjs,
   redux,
   tailwind,
-  threejs,
   chatgpt,
   discord,
   duolingo,
@@ -342,11 +341,6 @@ const tech = {
       logo: redux,
       name: 'Redux',
       description: 'State Management',
-    },
-    {
-      logo: threejs,
-      name: 'ThreeJS',
-      description: '3D Render',
     },
     {
       logo: figma,
