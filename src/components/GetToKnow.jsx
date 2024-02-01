@@ -4,7 +4,7 @@ import { know } from '../constants'
 
 const GetToKnow = () => {
   return (
-    <section id='about' className='flex flex-col gap-[32px] mt-[20vh] xxl:h-[100vh] p-5'>
+    <section id='about' className='flex flex-col gap-[32px] mt-[20vh] xxl:h-[80vh] p-5'>
       <h2 className="flex justify-center w-full font-bold text-center lg:text-[48px] sm:text-[35px] xs:text-[30px] text-[32px] lg:leading-[40px]">Get to Know me</h2>
 
       <div className="flex flex-wrap items-start justify-around gap-[55px] max-w-full p-3 md:p-10 mt-[5%]">
