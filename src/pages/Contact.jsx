@@ -69,10 +69,10 @@ const Contact = () => {
   };
 
   return (
-    <div className='h-[70vh] flex items-center justify-center '>
-      <div  className='form lg:w-[1024px] md:h-690px h-[684px] w-[358px]' >
-        <h1 >Get in touch</h1>
-        <p >Let's build something awesome.</p>
+    <div className='h-[70vh] flex items-center justify-center p-10'>
+      <div  className='flex flex-col items-start justify-center form md:w-[800px] md:h-690px h-[684px] w-[358px]' >
+        <h1 className='font-black lg:text-[80px] sm:text-[60px] text-[38px] lg:leading-[98px] mt-7 '>Get in touch</h1>
+        <p className='font-bold'>Let's build something awesome!</p>
 
        <div className="">
 
