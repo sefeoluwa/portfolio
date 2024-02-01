@@ -320,7 +320,7 @@ const tech = {
     {
       logo: html,
       name: 'HTML5',
-      description: '',
+      description: 'Web Framework',
     },
     {
       logo: CSS,
@@ -392,7 +392,7 @@ const tech = {
     },
     {
       logo: notion,
-      name: 'notion',
+      name: 'Notion',
       description: 'Notes',
     },
     {
@@ -402,12 +402,12 @@ const tech = {
     },
     {
       logo: chatgpt,
-      name: 'chatgpt',
+      name: 'ChatGPT',
       description: 'Productivity',
     },
     {
       logo: discord,
-      name: 'discord',
+      name: 'Discord',
       description: 'Communication',
     },
     {
