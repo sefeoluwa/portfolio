@@ -175,54 +175,65 @@ input, textarea{
 }
 
 .pink-text-gradient {
-  background: #8e005e; /* fallback for old browsers */
+  background: #8e005e;
   background: -webkit-linear-gradient(
     to top,
     #8e005e,
     #8c2626
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to top,
     #8e005e,
     #8c2626
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); 
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .green-text-gradient {
-  background: #00645e; /* fallback for old browsers */
+  background: #00645e;
   background: -webkit-linear-gradient(
     to top,
     #00645e,
     #1f7d4d
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to top,
     #00645e,
     #1f7d4d
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); 
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .blue-text-gradient {
-  background: #1c3f5e; /* fallback for old browsers */
+  background: #1c3f5e;
   background: -webkit-linear-gradient(
     to top,
     #1c3f5e,
     #2d6fa2
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to top,
     #1c3f5e,
     #2d6fa2
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); 
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.know-cards{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background: #fff;
+  border-right: 2px solid #000 ;
+}
+
+.know-cards > div {
+  background: #f2f2f2;
+  font-weight: 600;
 }
 
 
@@ -295,56 +306,61 @@ input, textarea{
 
 
 .pink-text-gradient {
-  background: #ec008c; /* fallback for old browsers */
+  background: #ec008c;
   background: -webkit-linear-gradient(
     to top,
     #ec008c,
     #fc6767
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to top,
     #ec008c,
     #fc6767
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); 
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .green-text-gradient {
-  background: #11998e; /* fallback for old browsers */
+  background: #11998e;
   background: -webkit-linear-gradient(
     to top,
     #11998e,
     #38ef7d
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to top,
     #11998e,
     #38ef7d
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); 
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .blue-text-gradient {
-  /* background: -webkit-linear-gradient(#eee, #333); */
-  background: #56ccf2; /* fallback for old browsers */
+  background: #56ccf2;
   background: -webkit-linear-gradient(
     to top,
     #2f80ed,
     #56ccf2
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to top,
     #2f80ed,
     #56ccf2
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); 
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 } 
+
+.know-cards{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ 
+}
+
 }
 
 @media screen and (max-width: 710px) {
