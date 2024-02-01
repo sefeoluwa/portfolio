@@ -14,7 +14,9 @@ const Hero = () => {
           <a href="https://flowcv.com/resume/ok647of1rh" target="blank" rel="noreferrer">
           <button className="main-button  flex items-center justify-center font-semibold text-white">See my resume</button>
           </a>
-          <button className="touch-btn flex items-center px-[40px] bg-[#181818] rounded-[1.87rem] text-[18px]">Get in touch</button>
+          <a href="/contact" className="touch-btn flex items-center px-[40px] bg-[#181818] rounded-[1.87rem] text-[18px]">
+          <button className=" flex items-center font-semibold">Get in touch</button>
+          </a>
         </div>
       </div>
     </section>
