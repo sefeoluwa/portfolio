@@ -11,25 +11,25 @@ const Stack = () => {
      <div className="">
         <div className="">
             <h2>Dev & Design</h2>
-            <div className="flex flex-wrap xxl:gap-[60px] gap-[24px] items-center justify-start md:grid grid-cols-4 place-items-center mt-10">
-              {tech.dev.map((dev) => (
-                <div className="" key={dev.name}>
-                  <img src={dev.logo} alt="" className="max-w-[215px]"/>
-                  <div className="">
-                    <p>{dev.name}</p>
-                    <p>{dev.description}</p>
-                  </div>
-                </div>
-              ))}
+            <div className="flex flex-wrap xxl:gap-[60px] gap-[24px] items-center justify-between mt-10">
+          {tech.dev.map((dev) => (
+            <div className="tech p-10 flex flex-col items-center justify-center w-[280px] max-h-[250px] gap-5" key={dev.name}>
+              <img src={dev.logo} alt="" className="w-[150px]"/>
+              <div className="">
+                <p>{dev.name}</p>
+                <p>{dev.description}</p>
+              </div>
             </div>
+          ))}
+        </div>
           </div>
 
           <div className="">
             <h2>Apps</h2>
-            <div className="flex flex-wrap xxl:gap-[60px] gap-[24px] items-center justify-start md:grid grid-cols-4 place-items-center mt-10">
+            <div className="flex flex-wrap xxl:gap-[60px] gap-[24px] items-center justify-between mt-10">
           {tech.app.map((app) => (
-            <div className="" key={app.name}>
-              <img src={app.logo} alt="" className="max-w-[215px]"/>
+            <div className="tech p-10 flex flex-col items-center justify-center w-[280px] max-h-[250px]" key={app.name}>
+              <img src={app.logo} alt="" className="w-[150px]"/>
               <div className="">
                 <p>{app.name}</p>
                 <p>{app.description}</p>
