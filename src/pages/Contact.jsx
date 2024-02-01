@@ -69,16 +69,16 @@ const Contact = () => {
   };
 
   return (
-    <div className='w-full flex items-center justify-center py-20 px-16 overflow-hidden'>
+    <div className='w-[95vw] md:w-full flex items-center justify-center py-20 px-16 overflow-hidden'>
       <div  className='flex flex-col items-start justify-center gap-12' >
-       <div className="">
+       <div className="md:p-0 p-4">
        <h1 className='font-black lg:text-[80px] sm:text-[60px] text-[38px] lg:leading-[98px] mt-7 '>Get in touch</h1>
         <p className='text-[18px]'>Let's build something awesome!</p>
        </div>
 
-       <div className="border-[0.3px] border-[#808080] rounded-2xl px-10 md:w-[800px] md:h-690px h-[684px] w-[358px]">
+       <div className="form border-[0.3px] border-[#808080] rounded-2xl px-5 md:px-10 md:w-[600px] lg:w-[800px] md:h-690px h-[700px] w-[330px]">
 
-          <div className="flex gap-60 p-4 items-center border-b-[0.3px] border-[#808080] w-full">
+          <div className="flex gap-16 md:gap-60 p-4 items-center border-b-[0.3px] border-[#808080] w-full">
             <div className="flex gap-2">
               <div className="w-3 h-3 bg-[#F63636] rounded-full"></div>
               <div className="w-3 h-3 bg-[#F6C136] rounded-full"></div>
@@ -117,7 +117,9 @@ const Contact = () => {
             <textarea rows='7' name='message' value={form.message} onChange={handleChange} placeholder="Write your message here" required className='placeholder:text-[#808080] bg-tranparent outline-none p-4  border-[0.5px] border-[#808080] rounded-2xl ' />
           </label>
 
-            <button type='submit' className=''>{loading ? 'Sending...' : sendButton}</button>
+            <div className="w-full flex  justify-center items-center">
+            <button type='submit' className='main-button w-[80%] md:w-[30%]'>{loading ? 'Sending...' : sendButton}</button>
+            </div>
           </form>
        </div>
       </div>
