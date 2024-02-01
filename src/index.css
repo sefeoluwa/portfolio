@@ -28,6 +28,22 @@
     color: #fff;
 }
 
+.touch-btn{
+  border: 2px solid rgba(255, 255, 255, 0.58);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.2px);
+  -webkit-backdrop-filter: blur(12.2px);
+  transition: all .3s ease-out;
+  touch-action: manipulation;
+}
+
+.touch-btn:hover{
+  background: #f2f2f2;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  color: #000;
+  border: none;
+}
+
 .nav-links {
   position: relative;
   padding: 10px 20px;
@@ -36,6 +52,7 @@
   border-top: 2px solid transparent;
   border-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
   border-image-slice: 1;
+  padding-top: 16px;
 }
 
 .nav-full-li{
@@ -108,10 +125,17 @@
 }
 
 
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background: #fff;
+  }
+
+  .touch-btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    color: #000;
+    border: none;
   }
 
   .project-card > div{
@@ -209,6 +233,10 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(12.2px);
     -webkit-backdrop-filter: blur(12.2px);
+  }
+
+  .touch-btn{
+    background: transparent;
   }
   
   .know-cards {
