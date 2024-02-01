@@ -391,11 +391,6 @@ const tech = {
       description: 'Productivity',
     },
     {
-      logo: clickup,
-      name: 'Clickup',
-      description: 'Productivity',
-    },
-    {
       logo: notion,
       name: 'notion',
       description: 'Notes',
