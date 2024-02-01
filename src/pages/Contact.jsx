@@ -69,41 +69,53 @@ const Contact = () => {
   };
 
   return (
-    <div className=''>
-      <div  className='' >
-      <p >Get in touch</p>
-      <h3 >Contact.</h3>
+    <div className='h-[70vh] flex items-center justify-center '>
+      <div  className='form lg:w-[1024px] md:h-690px h-[684px] w-[358px]' >
+        <h1 >Get in touch</h1>
+        <p >Let's build something awesome.</p>
 
-      <form ref={formRef} onSubmit={handleSubmit} className=''>
-      <label htmlFor="name" className="">
-        <span className=''>Your Name</span>
-        <input type="text" name='name' id='name' value={form.name} onChange={handleChange} placeholder="What's your name?" required className='' aria-label='name'/>
-      </label>
+       <div className="">
 
-      <label htmlFor="email" className="">
-            <span className=''>Your Email</span>
-            <input
-              type="text"
-              name='email'
-              id='email'
-              value={form.email}
-              onChange={handleChange}
-              placeholder="Your email"
-              required
-              className={`placeholder:text-secondary rounded-lg outlined-none border-none font-medium ${!isValidEmail ? 'border-red-500' : ''}`}
-            />
-            {!isValidEmail && (
-              <span className="text-red-500">Invalid email format</span>
-            )}
+          <div className="flex gap-60 p-4 items-center">
+            <div className="flex gap-2">
+              <div className="w-3 h-3 bg-[#F63636] rounded-full"></div>
+              <div className="w-3 h-3 bg-[#F6C136] rounded-full"></div>
+              <div className="w-3 h-3 bg-[#68F636] rounded-full"></div>
+            </div>
+            <p>New Message</p>
+          </div>
+
+          <form ref={formRef} onSubmit={handleSubmit} className=''>
+          <label htmlFor="name" className="">
+            <span className=''>Your Name</span>
+            <input type="text" name='name' id='name' value={form.name} onChange={handleChange} placeholder="What's your name?" required className='' aria-label='name'/>
           </label>
 
-      <label htmlFor="" className="flex flex-col">
-        <span className='text-white font-medium mb-4'>Your Message</span>
-        <textarea rows='7' name='message' value={form.message} onChange={handleChange} placeholder="What do you want to say?" required className='placeholder:text-secondary ' />
-      </label>
+          <label htmlFor="email" className="">
+                <span className=''>Your Email</span>
+                <input
+                  type="text"
+                  name='email'
+                  id='email'
+                  value={form.email}
+                  onChange={handleChange}
+                  placeholder="Your email"
+                  required
+                  className={`placeholder:text-secondary rounded-lg outlined-none border-none font-medium ${!isValidEmail ? 'border-red-500' : ''}`}
+                />
+                {!isValidEmail && (
+                  <span className="text-red-500">Invalid email format</span>
+                )}
+              </label>
 
-        <button type='submit' className=''>{loading ? 'Sending...' : sendButton}</button>
-      </form>
+          <label htmlFor="" className="flex flex-col">
+            <span className='text-white font-medium mb-4'>Your Message</span>
+            <textarea rows='7' name='message' value={form.message} onChange={handleChange} placeholder="What do you want to say?" required className='placeholder:text-secondary ' />
+          </label>
+
+            <button type='submit' className=''>{loading ? 'Sending...' : sendButton}</button>
+          </form>
+       </div>
       </div>
     </div>
   )
