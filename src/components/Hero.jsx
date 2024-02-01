@@ -5,7 +5,7 @@ const Hero = () => {
 
   return (
     <section id="hero" className="h-[80vh] pt-24 lg:pt-10 flex justify-center items-start">
-      <div className="flex items-center flex-col  justify-center gap-[40px]  max-w-[1008px]  h-[345px]">
+      <div className="flex items-center flex-col  justify-start gap-14  max-w-[1008px]  h-[345px]">
         <h1 className="font-black lg:text-[80px] sm:text-[60px] xs:text-[48px] text-[38px] lg:leading-[98px] mt-2 z-10 ">
           <span className="text-[#808080]">I'm</span> Sefe Akinbeye
         </h1>
@@ -14,7 +14,7 @@ const Hero = () => {
           <a href="https://flowcv.com/resume/ok647of1rh" target="blank" rel="noreferrer">
           <button className="main-button  flex items-center justify-center font-semibold text-white">See my resume</button>
           </a>
-          <a href="/contact" className="touch-btn flex items-center px-[40px] bg-[#181818] rounded-[1.87rem] text-[18px]">
+          <a href="/contact" className="touch-btn flex items-center h-[60px] md:h-auto px-[40px] bg-[#181818] rounded-[1.87rem] text-[18px]">
           <button className=" flex items-center font-semibold">Get in touch</button>
           </a>
         </div>

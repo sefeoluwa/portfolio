@@ -2,7 +2,7 @@ import { GetInTouch, GetToKnow, Hero, Projects } from '../components'
 
 const Home = () => {
   return (
-    <div className="pt-[15%]">
+    <div className="pt-[8%]">
               <Hero />
               <Projects />
               <GetToKnow />
