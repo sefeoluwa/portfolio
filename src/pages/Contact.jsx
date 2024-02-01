@@ -69,14 +69,14 @@ const Contact = () => {
   };
 
   return (
-    <div className='h-[90vh] flex items-center justify-center p-10 overflow-hidden'>
-      <div  className='flex flex-col items-start justify-center form md:w-[800px] md:h-690px h-[684px] w-[358px] gap-12' >
+    <div className='w-full flex items-center justify-center py-20 px-16 overflow-hidden'>
+      <div  className='flex flex-col items-start justify-center gap-12' >
        <div className="">
        <h1 className='font-black lg:text-[80px] sm:text-[60px] text-[38px] lg:leading-[98px] mt-7 '>Get in touch</h1>
         <p className='text-[18px]'>Let's build something awesome!</p>
        </div>
 
-       <div className="border-[0.3px] border-[#808080] rounded-2xl px-10 w-full">
+       <div className="border-[0.3px] border-[#808080] rounded-2xl px-10 md:w-[800px] md:h-690px h-[684px] w-[358px]">
 
           <div className="flex gap-60 p-4 items-center border-b-[0.3px] border-[#808080] w-full">
             <div className="flex gap-2">
@@ -87,7 +87,7 @@ const Contact = () => {
             <p>New Message</p>
           </div>
 
-          <form ref={formRef} onSubmit={handleSubmit} className='mt-6 flex flex-col gap-10 w-full justify-center'>
+          <form ref={formRef} onSubmit={handleSubmit} className='mt-6 flex flex-col gap-10  justify-center'>
           <label htmlFor="name" className="flex flex-wrap gap-5 ">
             <span className=''>Your Name:</span>
             <input type="text" name='name' id='name' value={form.name} onChange={handleChange} placeholder="What's your name?" required 
