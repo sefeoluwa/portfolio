@@ -44,6 +44,11 @@ const About = () => {
       <p className='max-w-[700px] px-10 lg:px-0 text-[18px]'>Let's collaborate and build something great together,</p>
 
       <Logo />
+
+
+      <a href="/contact" className="touch-btn flex items-center h-[50px] md:w-[30%] w-[60vw] justify-center bg-[#181818] rounded-[1.87rem] text-[18px]">
+          <button className=" flex items-center font-semibold">Get in touch</button>
+          </a>
     </div>
   );
 };
