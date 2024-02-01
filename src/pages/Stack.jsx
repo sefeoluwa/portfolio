@@ -28,7 +28,7 @@ const Stack = () => {
             <h2 className="mt-7 md:text-[30px] text-[20px] font-bold">Apps</h2>
             <div className="flex flex-wrap xxl:gap-[60px] gap-[24px] items-center justify-between mt-10 lg:justify-start">
           {tech.app.map((app) => (
-            <div className="tech p-10 flex flex-col items-center justify-center w-[280px] max-h-[250px] rounded-2xl" key={app.name}>
+            <div className="tech p-10 flex flex-col items-center justify-center w-[330px] h-[280px] rounded-2xl" key={app.name}>
               <img src={app.logo} alt="" className="w-[150px]"/>
               <div className="flex justify-between w-[120%] font-semibold py-5">
                 <p className="flex items-center">{app.name}</p>
