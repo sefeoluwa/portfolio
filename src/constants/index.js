@@ -27,6 +27,33 @@ import {
     eloquent,
 } from '../assets'
 
+import {
+  figma,
+  Github,
+  html,
+  javascript,
+  nodejs,
+  reactjs,
+  redux,
+  tailwind,
+  threejs,
+  chatgpt,
+  discord,
+  duolingo,
+  firebase,
+  framer,
+  grapql,
+  next,
+  slack,
+  notion,
+  ts,
+  trello,
+  vercel,
+  vscode,
+  clickup,
+
+} from '../assets/tech'
+
 const projects = [
   {
  name: "ProFolio",
@@ -266,9 +293,114 @@ const shelf = [
     eloquent,
 ]
 
+const tech = {
+  tech: [
+    {
+      logo: 'reactjs',
+      name: 'ReactJS',
+    },
+    {
+      logo: 'javascript',
+      name: 'JavaScript',
+    },
+    {
+      logo: 'next',
+      name: 'NextJS',
+    },
+    {
+      logo: 'nodejs',
+      name: 'NodeJS',
+    },
+    {
+      logo: 'html',
+      name: 'HTML5',
+    },
+    {
+      logo: 'css',
+      name: 'CSS3',
+    },
+    {
+      logo: 'tailwind',
+      name: 'TailwindCSS',
+    },
+    {
+      logo: 'ts',
+      name: 'TypeScript',
+    },
+    {
+      logo: 'redux',
+      name: 'Redux',
+    },
+    {
+      logo: 'threejs',
+      name: 'ThreeJS',
+    },
+    {
+      logo: 'figma',
+      name: 'Figma',
+    },
+    {
+      logo: 'graphql',
+      name: 'GraphQL',
+    },
+    {
+      logo: 'firebase',
+      name: 'Firebase',
+    },
+    {
+      logo: 'vercel',
+      name: 'Vercel',
+    },
+    {
+      logo: 'framer',
+      name: 'Framer',
+    },
+    {
+      logo: 'vscode',
+      name: 'VSCode',
+    },
+  ],
+
+  app: [
+    {
+      logo: 'slack',
+      name: 'Slack',
+    },
+    {
+      logo: 'trello',
+      name: 'Trello',
+    },
+    {
+      logo: 'clickup',
+      name: 'Clickup',
+    },
+    {
+      logo: 'notion',
+      name: 'notion',
+    },
+    {
+      logo: 'Github',
+      name: 'Github',
+    },
+    {
+      logo: 'chatgpt',
+      name: 'chatgpt',
+    },
+    {
+      logo: 'discord',
+      name: 'discord',
+    },
+    {
+      logo: 'duolingo',
+      name: 'duolingo',
+    },
+  ]
+}
+
 export { 
     projects,
     know,
     footlinks,
     shelf,
+    tech,
 }
