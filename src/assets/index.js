@@ -26,8 +26,12 @@ import vulture from './vulture.jpg'
 import eloquent from './eloquent.jpg'
 import modern from './modern.jpg'
 import data from './data.jpg'
+import hero_img_dark from './hero_img_dark.png'
+import hero_img_light from './hero_img_light.png'
 
 export {
+    hero_img_dark,
+    hero_img_light,
     atomic_habits,
     novice,
     Book,
