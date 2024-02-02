@@ -6,12 +6,14 @@ import { useEffect } from 'react';
 const Bookshelf = () => {
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     Aos.init({ 
       mirror: false,
       duration: 1000,
       once: true,
     });
   }, []);
+
 
   return (
    <div className="py-40 overflow-hidden">

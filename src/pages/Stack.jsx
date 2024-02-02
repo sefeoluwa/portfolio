@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const Stack = () => {
+  window.scrollTo(0, 0);
   useEffect(() => {
     AOS.init({ 
       mirror: false,
@@ -11,6 +12,7 @@ const Stack = () => {
       once: true,
     });
   }, []);
+
 
   return (
     <div className="py-20 px-16 overflow-hidden lg:w-[90%]">

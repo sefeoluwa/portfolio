@@ -7,12 +7,15 @@ import { useEffect } from "react";
 const Contact = () => {
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     Aos.init({ 
       mirror: false,
       duration: 1000,
       once: true,
     });
   }, []);
+
+
 
   const formRef = useRef();
   const [form, setForm] = useState({

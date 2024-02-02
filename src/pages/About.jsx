@@ -1,8 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from 'react-router-dom';
 import { Logo } from '../assets';
+import { useEffect } from 'react';
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); 
+
+
   return (
     <div className='flex flex-col gap-10 py-[150px] justify-center items-center'>
 
