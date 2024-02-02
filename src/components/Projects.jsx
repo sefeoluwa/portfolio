@@ -6,7 +6,9 @@ import { projects } from "../constants";
 import { FaGithub, FaEye } from 'react-icons/fa';
 
 const Projects = () => {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
   const controls = useAnimation();
 
   useEffect(() => {
