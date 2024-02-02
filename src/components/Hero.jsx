@@ -7,10 +7,10 @@ const Hero = () => {
   return (
     <motion.section
       id="hero"
-      className="h-[100vh] pt-24 lg:pt-0 flex justify-center items-start"
+      className="lg:h-[80vh] pt-4 lg:pt-0 flex lg:justify-center justify-start items-start"
     >
-      <div className="flex justify-start items-start gap-5 p-10 overflow-hidden">
-        <div className="flex flex-col justify-center items-start gap-5 w-[1008px] h-[]">
+      <div className="flex justify-start items-start gap-5 p-5 lg:p-10 overflow-hidden flex-wrap-reverse lg:flex-nowrap">
+        <div className="flex flex-col justify-center items-start gap-5 w-[1008px]">
           <motion.h1
             variants={textVariant(0)}
             initial="hidden"
@@ -23,7 +23,7 @@ const Hero = () => {
             variants={fadeIn("down", "tween", 0.5, 1)}
             initial="hidden"
             animate="show"
-            className="text-[15px] md:text-[25px] font-semibold w-[358px] lg:w-[40vw] text-justify text-[#808080] px-2"
+            className="text-[15px] md:text-[25px] font-semibold w-[80vw] lg:w-[40vw] text-justify text-[#808080] lg:px-2"
           >
             A skilled frontend developer with proficiency in ReactJS, JavaScript, NextJS, TypeScript,
             CSS3, and TailwindCSS. Let's collaborate to
@@ -33,7 +33,7 @@ const Hero = () => {
             variants={staggerContainer(0.2)}
             initial="hidden"
             animate="show"
-            className="flex gap-[16px] flex-wrap justify-center md:justify-normal"
+            className="flex gap-[16px] flex-wrap justify-start md:justify-normal"
           >
             <motion.a
               href="https://flowcv.com/resume/ok647of1rh"
@@ -56,9 +56,9 @@ const Hero = () => {
           </motion.div>
         </div>
 
-        <div className="w-[80vw] h-[80vh] flex justify-start items-start overflow-hidden ">
-          <img src={hero_img_dark} alt="" className="hero_img_dark w-[100%] h-[60vh] object-cover" />
-          <img src={hero_img_light} alt="" className="hero_img_light" />
+        <div className="w-full h-full lg:w-[80vw] lg:h-[80vh] flex justify-start items-start lg:overflow-hidden ">
+          <img src={hero_img_dark} alt="" className="hero_img_dark md:w-[100%] md:h-[60vh] object-cover" />
+          <img src={hero_img_light} alt="" className="hero_img_light w-[100%] h-[60vh] object-cover" />
         </div>
       </div>
     </motion.section>
