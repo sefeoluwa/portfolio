@@ -56,10 +56,14 @@ const Hero = () => {
           </motion.div>
         </div>
 
-        <div className="w-full h-full lg:w-[80vw] lg:h-[80vh] flex justify-start items-start lg:overflow-hidden ">
+        <motion.div 
+         variants={fadeIn("down", "tween", 0.5, 1)}
+         initial="hidden"
+         animate="show"
+        className="w-full h-full lg:w-[80vw] lg:h-[80vh] flex justify-start items-start xxl:items-end xxl:pb-10 xl:h-[60vh] lg:overflow-hidden ">
           <img src={hero_img_dark} alt="" className="hero_img_dark md:w-[100%] md:h-[60vh] object-cover" />
           <img src={hero_img_light} alt="" className="hero_img_light w-[100%] h-[60vh] object-cover" />
-        </div>
+        </motion.div>
       </div>
     </motion.section>
   );
