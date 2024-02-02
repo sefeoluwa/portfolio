@@ -40,12 +40,25 @@ const About = () => {
         </div>
       </div>
 
-      <p className='max-w-[700px] px-10 lg:px-0 text-[18px]'>Feel free to reach out <a href="mailto:sefeoluwaakinbeye@gmail.com" className='font-bold underline underline-offset-4'>email</a> via  Dive into my professional journey through my <a  href="https://flowcv.com/resume/ok647of1rh" target="blank" rel="noreferrer" className='font-bold underline underline-offset-4'>Resume</a>, or connect with me on <a href="https://www.linkedin.com/in/sefeakinbeye/" target="_blank" rel="noreferrer" className='font-bold underline underline-offset-4'>LinkedIn.</a></p>
+      <p className='max-w-[700px] px-10 lg:px-0 text-[18px]'>
+        Feel free to reach out to me via <span> </span>
+        <a href="mailto:sefeoluwaakinbeye@gmail.com" className='font-bold underline underline-offset-4'>
+          email  
+          </a>  
+        .<span> </span>Dive into my professional journey through my  <span> </span>
+        <a  href="https://flowcv.com/resume/ok647of1rh" target="blank" rel="noreferrer" className='font-bold underline underline-offset-4'>
+          Resume
+        </a>
+        ,  <span> </span>or connect with me on  <span> </span>
+        <a href="https://www.linkedin.com/in/sefeakinbeye/" target="_blank" rel="noreferrer" className='font-bold underline underline-offset-4'>
+        LinkedIn
+        </a>
+        . <span> </span>
+      </p>
 
       <p className='max-w-[700px] px-10 lg:px-0 text-[18px]'>Let's collaborate and build something great together,</p>
 
       <Logo />
-
 
       <Link to="/contact" className="touch-btn flex items-center h-[50px] md:w-[30%] w-[60vw] justify-center bg-[#181818] rounded-[1.87rem] text-[18px]">
           <button className=" flex items-center font-semibold">Get in touch</button>
