@@ -16,6 +16,10 @@ function Navbar() {
     setIsMobileMenuOpen((prevState) => !prevState);
   };
 
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false)
+  }
+
   // animate sidebar render on mobiles
 
 
@@ -125,7 +129,7 @@ function Navbar() {
         className="md:hidden flex flex-col fixed bottom-16 pb-10 w-full z-10">
           <ul className="text-[20px] items-center flex flex-col w-[95vw] justify-center p-5">
             <motion.li variants={itemVariants} className="nav-links w-full flex justify-center p-2 h-12 items-center rounded-[10px]">
-            <Link to="/about">
+            <Link to="/about" onClick={closeMobileMenu}>
               About
             </Link>
             </motion.li>
@@ -134,19 +138,21 @@ function Navbar() {
             to="/#projects" 
             className=""
             onClick={() => {
+              closeMobileMenu
               setActive(true);
               document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+
             }}>
               Projects
             </Link>
             </motion.li>
             <motion.li variants={itemVariants} className="mt-3 p-2 nav-links w-full flex justify-center h-12 items-center rounded-[10px]">
-            <Link to="/stack">
+            <Link to="/stack"  onClick={closeMobileMenu}>
               Tech Stack
             </Link>
             </motion.li>
             <motion.li variants={itemVariants} className="mt-3 p-2 nav-links w-full flex justify-center h-12 items-center rounded-[10px]">
-            <Link to="/contact">
+            <Link to="/contact" onClick={closeMobileMenu}>
               Contact
             </Link>
             </motion.li>
