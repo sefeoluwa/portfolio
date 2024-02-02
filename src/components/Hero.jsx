@@ -58,8 +58,8 @@ const Hero = () => {
       </div>
 
       <div className="">
-        <img src={hero_img_dark} alt="" className="" />
-        <img src={hero_img_light} alt="" className="" />
+        <img src={hero_img_dark} alt="" className="hero_img_dark" />
+        <img src={hero_img_light} alt="" className="hero_img_light" />
       </div>
       </div>
     </motion.section>
