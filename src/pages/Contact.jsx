@@ -76,7 +76,7 @@ const Contact = () => {
         <p className='text-[18px]'>Let's build something awesome!</p>
        </div>
 
-       <div className="form border-[0.3px] border-[#808080] rounded-2xl px-5 md:px-10 md:w-[600px] lg:w-[800px] md:h-690px h-[700px] w-[330px]">
+       <div className="form border-[0.3px] border-[#808080] rounded-2xl px-5 md:px-10 md:w-[600px] lg:w-[800px] md:h-690px h-[750px] w-[330px]">
 
           <div className="flex gap-16 md:gap-60 p-4 items-center border-b-[0.3px] border-[#808080] w-full">
             <div className="flex gap-2">
