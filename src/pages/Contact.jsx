@@ -1,7 +1,19 @@
 import  { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Aos from 'aos';
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Contact = () => {
+
+  useEffect(() => {
+    Aos.init({ 
+      mirror: false,
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   const formRef = useRef();
   const [form, setForm] = useState({
     name: '',
@@ -71,12 +83,24 @@ const Contact = () => {
   return (
     <div className='w-[95vw] md:w-full flex items-center justify-center py-20 px-16 overflow-hidden'>
       <div  className='flex flex-col items-start justify-center gap-12' >
-       <div className="md:p-0 p-4">
+       <div 
+       data-aos="zoom-in-down"
+       data-aos-easing="ease"
+       data-aos-duration="1500"
+       data-aos-delay='0.5'
+       data-aos-mirror="false"
+       className="md:p-0 p-4">
        <h1 className='font-black lg:text-[80px] sm:text-[60px] text-[38px] lg:leading-[98px] mt-7 '>Get in touch</h1>
         <p className='text-[18px]'>Let's build something awesome!</p>
        </div>
 
-       <div className="form border-[0.3px] border-[#808080] rounded-2xl px-5 md:px-10 md:w-[600px] lg:w-[800px] md:h-690px h-[750px] w-[330px]">
+       <div 
+       data-aos="zoom-in"
+       data-aos-easing="ease"
+       data-aos-duration="1500"
+       data-aos-delay='0.5'
+       data-aos-mirror="false"
+       className="form border-[0.3px] border-[#808080] rounded-2xl px-5 md:px-10 md:w-[600px] xl:h-[610px] lg:w-[800px] md:h-690px h-[750px] w-[330px]">
 
           <div className="flex gap-16 md:gap-60 p-4 items-center border-b-[0.3px] border-[#808080] w-full">
             <div className="flex gap-2">

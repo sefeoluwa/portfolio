@@ -1,6 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
+import Aos from 'aos';
+import "aos/dist/aos.css";
 import { shelf } from '../constants'
+import { useEffect } from 'react';
 const Bookshelf = () => {
+
+  useEffect(() => {
+    Aos.init({ 
+      mirror: false,
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
    <div className="py-40 overflow-hidden">
 <div className="flex flex-col justify-center px-[18.5%]">
@@ -10,7 +22,13 @@ const Bookshelf = () => {
     <div className="flex justify-center">
     <div className='flex flex-wrap xxl:gap-[60px] gap-[24px] items-center justify-center lg:grid grid-cols-4 place-items-center mt-10'>
       {shelf.map((shelf, index) => (
-        <div className="max-w-[215px]" key={index}>
+        <div 
+        data-aos="fade-right"
+        data-aos-easing="ease"
+        data-aos-duration="1500"
+        data-aos-delay='0.5'
+        data-aos-mirror="false"
+          className="max-w-[215px]" key={index}>
           <img src={shelf} alt="" />
         </div>
       ))}
