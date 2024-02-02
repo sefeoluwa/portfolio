@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Link } from 'react-router-dom';
 import { Logo } from '../assets';
 
 const About = () => {
@@ -46,9 +47,9 @@ const About = () => {
       <Logo />
 
 
-      <a href="/contact" className="touch-btn flex items-center h-[50px] md:w-[30%] w-[60vw] justify-center bg-[#181818] rounded-[1.87rem] text-[18px]">
+      <Link to="/contact" className="touch-btn flex items-center h-[50px] md:w-[30%] w-[60vw] justify-center bg-[#181818] rounded-[1.87rem] text-[18px]">
           <button className=" flex items-center font-semibold">Get in touch</button>
-          </a>
+          </Link>
     </div>
   );
 };
