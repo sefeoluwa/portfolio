@@ -296,7 +296,7 @@ const tech = {
     {
       logo: reactjs,
       name: 'ReactJS',
-      description: 'Web Framwork',
+      description: 'Web Framework',
     },
     {
       logo: javascript,
@@ -314,6 +314,11 @@ const tech = {
       description: 'Web Framework',
     },
     {
+      logo: ts,
+      name: 'TypeScript',
+      description: 'Web Framework',
+    },
+    {
       logo: html,
       name: 'HTML5',
       description: 'Web Framework',
@@ -327,11 +332,6 @@ const tech = {
       logo: tailwind,
       name: 'TailwindCSS',
       description: 'CSS',
-    },
-    {
-      logo: ts,
-      name: 'TypeScript',
-      description: 'Web Framework',
     },
     {
       logo: redux,
