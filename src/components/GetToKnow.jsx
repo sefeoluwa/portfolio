@@ -5,9 +5,10 @@ import { fadeIn } from '../utils/motion';
 import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
+
 const GetToKnow = () => {
   const [ref, inView] = useInView({
-    triggerOnce: true, // Ensures that the animation only triggers once
+    triggerOnce: true,
   });
 
   const [animate, setAnimate] = useState(false);
@@ -37,7 +38,9 @@ const GetToKnow = () => {
             </Link>
             <p className='text-[16px] text-[#808080]'>{about.description}</p>
             <div className='site-btn flex justify-start px-14 py-3 rounded-[10px] bg-tertiary items-start'>
-              <button>{about.link}</button>
+              <a href={about.id}  rel='noopener noreferrer'>
+                <button>{about.linkName}</button>
+              </a>
             </div>
           </motion.div>
         ))}
