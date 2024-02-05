@@ -15,7 +15,7 @@ const Stack = () => {
 
 
   return (
-    <div className="py-20 px-16 overflow-hidden lg:w-[90%]">
+    <div className="py-20 px-10  md:px-16 overflow-hidden lg:w-[90%]">
       <div className="">
         <h2 className="font-black lg:text-[80px] sm:text-[60px] text-[38px] lg:leading-[98px] mt-7">Tech Stack</h2>
         <p className="text-[18px]">The dev tools and apps I use.</p>
@@ -32,13 +32,13 @@ const Stack = () => {
                 data-aos-duration="1500"
                 data-aos-delay='0.5'
                 data-aos-mirror="false"
-                className="tech p-10 flex flex-col items-center justify-center w-[310px] max-h-[280px] gap-5 rounded-2xl "
+                className="tech p-10 flex flex-col items-center justify-center w-[350px] md:w-[310px] max-h-[280px] gap-5 rounded-2xl "
                 key={dev.name}
               >
                 <img src={dev.logo} alt="" className="w-[150px]" />
-                <div className="tech-desc-container flex justify-between w-[120%] font-semibold py-5">
-                  <p className="flex items-center">{dev.name}</p>
-                  <p className="tech-desc w-[65%] flex justify-center items-center p-2 rounded-3xl text-[15px] font-normal">{dev.description}</p>
+                <div className="tech-desc-container flex justify-between w-[120%] md:w-[] font-semibold py-5">
+                  <p className="flex items-center w-[48%]">{dev.name}</p>
+                  <p className="tech-desc w-[50%] md:w-[65%] flex justify-center items-center p-2  rounded-3xl text-[15px] font-normal">{dev.description}</p>
                 </div>
               </div>
             ))}
