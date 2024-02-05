@@ -273,22 +273,22 @@ const footlinks = [
 ]
 
 const shelf = [
-    atomic_habits,
-    novice,
-    Book,
-    css,
-    greatestSalesman,
-    harry,
     headfirstJS,
-    Improbable,
     jsVisually,
     secrets,
     smarter,
-    steal,
-    vulture,
     data,
-    modern,
     eloquent,
+    novice,
+    modern,
+    css,
+    steal,
+    atomic_habits,
+    greatestSalesman,
+    harry,
+    Improbable,  
+    vulture,
+    Book,
 ]
 
 const tech = {
