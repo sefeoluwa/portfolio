@@ -25,7 +25,7 @@ const Hero = () => {
             animate="show"
             className="text-[15px] md:text-[25px] font-semibold w-[80vw] lg:w-[40vw] text-justify text-[#808080] lg:px-2"
           >
-            A skilled frontend developer with proficiency in ReactJS, JavaScript, NextJS, TypeScript,
+            A skilled frontend developer with 2+ years of development experience. I'm proficient in ReactJS, JavaScript, NextJS, TypeScript,
             CSS3, and TailwindCSS. Let's collaborate to
             create something extraordinary that will make a lasting impact!
           </motion.p>
