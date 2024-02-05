@@ -33,15 +33,14 @@ const GetToKnow = () => {
             variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
             className='know-cards cursor-pointer flex flex-col items-center text-center justify-center gap-5 rounded-[32px] h-[350px] md:h-[300px] w-[330px] md:w-[300px] overflow-hidden p-5 bg-[#191938] border-r-2'
           >
-            <Link to={`/${about.id}`}>
+            <Link to={`/${about.id}`} className='flex flex-col gap-7 items-center'>
               <p className='text-[32px] font-bold'>{about.name}</p>
-            </Link>
+            
             <p className='text-[16px] text-[#808080]'>{about.description}</p>
             <div className='site-btn flex justify-start px-14 py-3 rounded-[10px] bg-tertiary items-start'>
-              <a href={about.id}  rel='noopener noreferrer'>
-                <button>{about.linkName}</button>
-              </a>
+                <p>{about.linkName}</p>
             </div>
+            </Link>
           </motion.div>
         ))}
       </div>
