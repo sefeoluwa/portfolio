@@ -6,9 +6,6 @@ import {
     profolio,
     clone, 
     sketch,
-    Bookshelf,
-    Tech,
-    sefe,
     atomic_habits,
     novice,
     Book,
@@ -50,7 +47,6 @@ import {
   trello,
   vercel,
   vscode,
-  clickup,
   netlify,
   spotify
 
@@ -217,19 +213,19 @@ const know = [
     {
         name: 'About me',
         description: 'Who I am and what I do.',
-        link: 'Visit site',
+        linkName: 'Visit site',
         id: 'about',
     },
     {
         name: 'Tech Stack',
         description: 'The dev tools and apps I use.',
-        link: 'Visit site',
+        linkName: 'Visit site',
         id: 'stack',
     },
     {
         name: 'Bookshelf',
         description: "Books and pieces of wisdom I've enjoyed reading",
-        link: 'Visit site',
+        linkName: 'Visit site',
         id: 'bookshelf',
     },
 ];
