@@ -7,8 +7,6 @@ import profolio from './profolio.png'
 import sketch from "./sketch.png";
 import library from "./library.png";
 import clone from './clone.png'
-import Tech from './Tech.png'
-import Bookshelf from './Bookshelf.png'
 import sefe from './sefe.jpeg'
 import atomic_habits from './atomic_habits.png'
 import Book from './Book.png'
@@ -57,7 +55,5 @@ export {
     sketch,
     library,
     clone,
-    Tech,
-    Bookshelf,
     sefe,
 }
