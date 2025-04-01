@@ -250,6 +250,10 @@ const footlinks = [
       name: 'Contact',
       id: '/contact',
     },
+    {
+      name: 'Blog',
+      id: '/blog'
+    }
   ]
  },
  {
