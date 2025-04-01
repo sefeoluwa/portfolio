@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
-import { Logo } from '../assets';
 import { useEffect } from 'react';
 
 const Blog = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); 
+
     return (
       <div className='flex flex-col gap-5 py-[150px] justify-center items-center'>
       <div className="px-10">
