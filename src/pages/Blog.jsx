@@ -1,6 +1,8 @@
-
 const Blog = () => {
-    <p>Blog</p>
-}
-
-export default Blog
+    return (
+      <p>Bloggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</p>
+    );
+  }
+  
+  export default Blog;
+  

@@ -4,6 +4,7 @@ import Hero from './Hero'
 import GetInTouch from './GetInTouch'
 import GetToKnow from './GetToKnow'
 import Projects from './Projects'
+import { Blog } from '../pages'
 
 export {
     Footer,
@@ -12,4 +13,5 @@ export {
     Navbar,
     Hero,
     Projects,
+    Blog,
 }

@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { Footer, Navbar } from "./components"
-import { About, Bookshelf, Contact, Home, Stack } from "./pages"
+import { About, Bookshelf, Contact, Home, Stack, Blog } from "./pages"
 
 
 
@@ -19,6 +19,7 @@ function App() {
               <Route path="/stack" element={<Stack />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/bookshelf" element={<Bookshelf />} />
+              <Route path="/blog" element={<Blog />} />
               </Routes>
             <Footer />
         </div>

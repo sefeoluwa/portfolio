@@ -59,6 +59,11 @@ function Navbar() {
               Contact
             </Link>
           </li>
+          <li>
+          <Link to="/blog" className="cursor-pointer">
+              Blog
+            </Link>
+          </li>
           </ul>
           <div className="w-[100px] h-[50px] p-4 flex justify-between items-center ">
                <a href="https://github.com/sefeoluwa" target="_blank" rel="noreferrer">
@@ -149,6 +154,11 @@ function Navbar() {
             <motion.li variants={itemVariants} className="mt-3 p-2 nav-links w-full flex justify-center h-12 items-center rounded-[10px]">
             <Link to="/stack"  onClick={closeMobileMenu}>
               Tech Stack
+            </Link>
+            </motion.li>
+            <motion.li variants={itemVariants} className="mt-3 p-2 nav-links w-full flex justify-center h-12 items-center rounded-[10px]">
+            <Link to="/blog" onClick={closeMobileMenu}>
+              Blog
             </Link>
             </motion.li>
             <motion.li variants={itemVariants} className="mt-3 p-2 nav-links w-full flex justify-center h-12 items-center rounded-[10px]">
